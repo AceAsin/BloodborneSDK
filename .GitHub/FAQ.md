@@ -22,7 +22,7 @@
 9. What SDK versions do you support?
     - I support all versions of the SDK, this includes Avatar 2.0, Avatar 3.0, and World 3.0.
 10. Will the SDK get discountinued at some point?
-    - As long as I am alive, as well as have the support to maintatin and keep working on it, then it will not get deprecated.
+    - As long as I am alive, as well as have the support to maintain and keep working on it, then it will not get deprecated.
 
 [Server]: https://discord.gg/U8vHS7y
 [PayPal]: https://paypal.me/AceAsin
