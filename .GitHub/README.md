@@ -56,9 +56,12 @@
 
 ## **Important**
 
+- [BUG](BUG.md)
 - [CHANGELOG](CHANGELOG.md)
+- [CONTRIBUTOR](CONTRIBUTOR.md)
 - [FAQ](FAQ.md)
 - [LICENSE](LICENSE.md)
 - [NOTICE](NOTICE.md)
 - [README](README.md)
+- [TODO](TODO.md)
 - [VERSION](VERSION.md)
