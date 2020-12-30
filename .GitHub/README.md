@@ -38,8 +38,6 @@
 - No Particle Limiter
 - No Polygon Limiter
 - No Height Limiter
-- Dark Theme Support
-- Light Theme Support
 
 ## **Implementation**
 
@@ -47,6 +45,11 @@
 - Discord Rich Presence
 - Domain Name System
 - Remote Configuration
+
+## **Support**
+
+- Dark Theme
+- Light Theme
 
 ## **Script**
 
