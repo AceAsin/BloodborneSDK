@@ -2,7 +2,7 @@
 
 ## **Updating**
 
-- SDK2
+#### SDK2
 
 1. Close Unity.
 2. Backup your Unity project.
@@ -10,7 +10,7 @@
 4. Open your Unity project.
 5. Import the new SDK2 package.
 
-- SDK3 (Avatar) - Only execute steps 5 - 8 if you are still encountering errors.
+#### SDK3 (Avatar) - Only execute steps 5 - 8 if you are still encountering errors
 
 1. Close Unity.
 2. Backup your Unity project.
@@ -21,7 +21,7 @@
 7. Open your Unity project.
 8. Import the new SDK3 (Avatar) package.
 
-- SDK3 (World) - Only execute steps 5 - 8 if you are still encountering errors.
+#### SDK3 (World) - Only execute steps 5 - 8 if you are still encountering errors
 
 1. Close Unity.
 2. Backup your Unity project.
@@ -34,7 +34,7 @@
 
 ## **Upgrading**
 
-- SDK2 - SDK3 (Avatar)
+#### SDK2 - SDK3 (Avatar)
 
 1. Close Unity.
 2. Backup your Unity project.
@@ -45,7 +45,7 @@
 7. Open your Unity project.
 8. Import the new SDK3 (Avatar) package.
 
-- SDK2 - SDK3 (World)
+#### SDK2 - SDK3 (World)
 
 1. Close Unity.
 2. Backup your Unity project.
@@ -58,7 +58,7 @@
 
 ## **Downgrading**
 
-- SDK3 (Avatar) - SDK2
+#### SDK3 (Avatar) - SDK2
 
 1. Close Unity.
 2. Backup your Unity project.
@@ -69,7 +69,7 @@
 7. Open your Unity project.
 8. Import the new SDK2 package.
 
-- SDK3 (World) - SDK2
+#### SDK3 (World) - SDK2
 
 1. Close Unity.
 2. Backup your Unity project.
