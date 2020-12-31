@@ -17,7 +17,7 @@
 3. Open your Unity project.
 4. Import the new SDK3 (Avatar) package.
 5. Close Unity.
-6. Delete the `VRCSDK` folder, as well as the `VRCSDK.meta` file in the `Assets` folder, from the explorer.
+6. Delete the `VRCSDK` folder, as well as the `VRCSDK.meta` file in the `Assets` folder.
 7. Open your Unity project.
 8. Import the new SDK3 (Avatar) package.
 
