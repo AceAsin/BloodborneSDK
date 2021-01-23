@@ -2,8 +2,8 @@
 
 1. Where can I download the SDK and where can I support you?
     - The SDK can only be downloaded from my discord server, [ΛCE ΛSIN][Server], at the current time.
-    - If you love my work and wish to support me, then I am accepting donations at [PayPal][PayPal], and [Ko-Fi][Ko-Fi]. You can also supoprt me on [Patreon][Patreon] for exclusive features. It is not necessary or mandatory in any way, shape, or form.
-2. Is the modified SDK againt VRChat's ToS and is it safe to use?
+    - If you love my work and wish to support me, then I am accepting donations at [PayPal][PayPal], and [Ko-Fi][Ko-Fi]. You can also support me on [Patreon][Patreon] for exclusive features. It is not necessary or mandatory in any way, shape, or form.
+2. Is the modified SDK against VRChat's ToS and is it safe to use?
     - The SDK is against VRChat's ToS.
     - The SDK is considered safe and it's not very likely that you will get banned because of using a modified SDK, there is no way of checking that you are using a modified SDK.
 3. What does the SDK do and how does it differ from other modified SDK's?
@@ -21,7 +21,7 @@
     - I am open to modifying SDK's to Patron's, please take a look at my Patreon if you are interested in acquiring a modified SDK for your community or gang.
 9. What SDK versions do you support?
     - I support all versions of the SDK, this includes Avatar 2.0, Avatar 3.0, and World 3.0.
-10. Will the SDK get discountinued at some point?
+10. Will the SDK get discontinued at some point?
     - As long as I am alive, as well as have the support to maintain and keep working on it, then it will not get deprecated.
 
 [Server]: https://discord.gg/U8vHS7y
