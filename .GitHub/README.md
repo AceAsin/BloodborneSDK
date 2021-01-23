@@ -12,7 +12,9 @@
 ## **Download**
 
 <div>
-    <iframe src="https://discord.com/widget?id=492294696912158720&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    <a href='https://discord.gg/U8vHS7y' title='Discord'>
+        <img alt='Discord' src='https://img.shields.io/discord/492294696912158720?color=7289DA&logoColor=7289DA&label=%CE%9BCE%20%CE%9BSIN%E2%84%A2&logo=Discord&style=for-the-badge'>
+    </a>
 </div>
 
 ## **Support**
