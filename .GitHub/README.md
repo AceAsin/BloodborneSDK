@@ -8,8 +8,8 @@
 
 [![Image](../Asset/Image/Background.png)](https://discord.gg/U8vHS7y)
 
-<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-<script type='text/javascript'>kofiwidget2.init('Support me on Ko-Fi!', '#000000', 'AceAsin');kofiwidget2.draw();</script> <!-- H2H31J2PX -->
+<!-- <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script> -->
+<!-- <script type='text/javascript'>kofiwidget2.init('Support me on Ko-Fi!', '#000000', 'AceAsin');kofiwidget2.draw();</script> --> <!-- H2H31J2PX -->
 
 </div>
 
