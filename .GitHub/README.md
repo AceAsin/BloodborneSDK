@@ -1,21 +1,27 @@
 # **Bloodborne**
 
-<div align='center'>
-
-<a href='https://www.buymeacoffee.com/AceAsin'>
-    <img src='https://img.buymeacoffee.com/button-api/?text=Buy me a coffee!&slug=AceAsin&button_colour=000000&font_colour=FFFFFF&font_family=Cookie&outline_colour=FFFFFF&coffee_colour=FF0000' alt='Ace Asin' width="200">
-</a>
-
-[![Image](../Asset/Image/Background.png)](https://discord.gg/U8vHS7y)
-
 <!-- <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script> -->
 <!-- <script type='text/javascript'>kofiwidget2.init('Support me on Ko-Fi!', '#000000', 'AceAsin');kofiwidget2.draw();</script> --> <!-- H2H31J2PX -->
 
+<div>
+    <a href='https://discord.gg/U8vHS7y' title='Discord'>
+        <img alt='Discord' src='../Asset/Image/Background.png'>
+    </a>
 </div>
 
 ## **Download**
 
-- [ΛCE ΛSIN](https://discord.gg/U8vHS7y)
+<div>
+    <iframe src="https://discord.com/widget?id=492294696912158720&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</div>
+
+## **Support**
+
+<div>
+    <a href='https://www.buymeacoffee.com/AceAsin'>
+        <img src='https://img.buymeacoffee.com/button-api/?text=Buy me a coffee!&slug=AceAsin&button_colour=000000&font_colour=FFFFFF&font_family=Cookie&outline_colour=FFFFFF&coffee_colour=FF0000' alt='Ace Asin' width="200">
+    </a>
+</div>
 
 ## **Modification**
 
