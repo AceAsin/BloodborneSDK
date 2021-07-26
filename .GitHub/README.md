@@ -26,8 +26,6 @@
     </a>
 </div>
 
----
-
 ## Download
 
 - The download can be found on the server, [ΛCE ΛSIN](https://discord.gg/U8vHS7y). There's also more information on the server, so come stop by and say hello.
