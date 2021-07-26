@@ -1,83 +1,141 @@
 # **Bloodborne**
 
-<!-- <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script> -->
-<!-- <script type='text/javascript'>kofiwidget2.init('Support me on Ko-Fi!', '#000000', 'AceAsin');kofiwidget2.draw();</script> --> <!-- H2H31J2PX -->
+[Discord]: https://discord.gg/U8vHS7y
+[Patreon]: https://patreon.com/AceAsin
+[BuyMeACofee]: https://buymeacoffee.com/aceasin
+[Ko-Fi]: https://ko-fi.com/aceasin
 
-<div>
+<div align='center'>
     <a href='https://discord.gg/U8vHS7y' title='Discord'>
-        <img alt='Discord' src='../Asset/Image/Background.png'>
+        <img alt='Discord' src='../Asset/Image/Background.png' />
     </a>
 </div>
 
-## **Download**
-
-<div>
-    <a href='https://discord.gg/U8vHS7y' title='Discord'>
-        <img alt='Discord' src='https://img.shields.io/discord/492294696912158720?color=7289DA&logoColor=7289DA&label=%CE%9BCE%20%CE%9BSIN%E2%84%A2&logo=Discord&style=for-the-badge'>
+<div align='center'>
+    <a href='https://discord.gg/U8vHS7y'>
+        <img alt='Discord' src='https://img.shields.io/discord/492294696912158720?color=5865F2&logoColor=FFFFFF&label=%CE%9BCE%20%CE%9BSIN%E2%84%A2&logo=Discord&style=for-the-badge' />
+    </a>
+    <a href='https://patreon.com/AceAsin' title='Patreon'>
+        <img alt='Patreon' src='https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.patreon.com%2Fapi%2Fcampaigns%2F1839759&query=data.attributes.patron_count&suffix=%20Patrons&color=FF5441&label=Patreon&logo=Patreon&logoColor=FFFFFF&style=for-the-badge' />
+    </a>
+    <a href='https://buymeacoffee.com/aceasin' title='BuyMeACoffee'>
+        <img alt='BuyMeACoffee' src='https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Buy-FFDD00?logo=buymeacoffee&logoColor=FFFFFF&style=for-the-badge' />
+    </a>
+    <a href='https://ko-fi.com/aceasin' title='Ko-Fi'>
+        <img alt='Ko-Fi' src='https://img.shields.io/badge/Ko--Fi-Buy-FF5E5B?logo=Ko-Fi&logoColor=FFFFFF&style=for-the-badge' />
     </a>
 </div>
 
-## **Support**
+---
 
-<div>
-    <a href='https://www.buymeacoffee.com/AceAsin' title='Ace Asin'>
-        <img src='https://img.buymeacoffee.com/button-api/?text=Buy me a coffee!&slug=AceAsin&button_colour=000000&font_colour=FFFFFF&font_family=Cookie&outline_colour=FFFFFF&coffee_colour=FF0000' alt='Ace Asin' width="200">
-    </a>
-</div>
+## Download
 
-## **Modification**
+- The download can be found on the server, [ΛCE ΛSIN](https://discord.gg/U8vHS7y). There's also more information on the server, so come stop by and say hello.
+- If you want to share the package, then please redirect people to the official discord server, so that they may download the package from the respected source.
 
-- Anti Yoink
-- Auto Fill Visemes
-- Auto Fix Issues
-- Auto Remove Scripts
-- Auto Remove Shaders
-- Custom Artwork Banner
-- Custom Asset Path
-- Custom Upload Background
-- Custom User Interface
-- Custom RPC Details
-- Custom RPC State
-- No Audio Limiter
-- No Height Limiter
-- No Particle Limiter
-- No Polygon Limiter
-- No Quest Limiter
-- No Shader Limiter
-- No Station Limiter
-- Theme Background Color
-- Theme Foreground Color
-- Toggle Presence
-- Toggle Details
-- Toggle State
-- Toggle Time
-- Upload Panel Color
-- Upload Panel Image
-- Upload Panel Video
-- Upload Panel Volume
+## Support
 
-## **Implementation**
+- You can support me by creating a free account, following me on [GitHub](https://github.com/AceAsin) and starring my repositories. If you wish to donate, then please visit to [Buy Me A Cofee](https://buymeacoffee.com/aceasin) or [Ko-Fi](https://ko-fi.com/aceasin)
 
-- Content Delivery Network
-- Discord Rich Presence
-- Domain Name System
-- Remote Configuration
+## Important
 
-## **Support**
+- The image and video previews have been removed from the repository, since the software development kit is constantly changing and evolving.
+- The software development kit saves your settings on a `.asset` file and editor preferences. You can reset the `.asset` file back to default by going to the setting tab, when you have the control panel open. You can delete the editor preferences by going to `Computer\HKEY_CURRENT_USER\SOFTWARE\Unity Technologies\Unity Editor 5.x` on your registry editor and deleting all of the keys that begin with `Bloodborne`. It's very important that you only delete keys that begin with `Bloodborne`. You can open your registry by hitting `Windows + R`, then typing `regedit`.
 
-- Dark Theme
-- Light Theme
+## Unity
 
-## **Script**
+- 2018.4.20f1
 
-- Thumbnail
+## Build
 
-## **Shader**
+- Alpha
+- Beta
+- Public
+- Private
 
-- Thumbnail
+## Version
 
-## **Variable**
+- 11.0
 
+## Date
+
+- 2021.07.24.01.59
+
+## Information
+
+- Modification
+  - Anti Yoink
+  - Auto Fill Visemes
+  - Auto Fix Issues
+  - Auto Remove Scripts
+  - Auto Remove Shaders
+  - Bug Fixes
+  - Bypass Limiters
+  - Performance Improvements
+
+- Bypass
+  - Audio Limiter
+  - Height Limiter
+  - Material Limiter
+  - Mesh Limiter
+  - Particle Limiter
+  - Polygon Limiter
+  - Quest Limiter
+  - Shader Limiter
+  - Station Limiter
+
+- Custom
+  - Artwork Banner
+  - Asset Path
+  - Avatar Thumbnail
+  - Client Path
+  - Rich Presence
+  - Upload Panel
+  - User Interface
+
+- Implementation
+  - Application Programming Interface
+  - Automatic Updater
+  - Content Delivery Network
+  - Discord Rich Presence
+  - Domain Name System
+  - Hardware Identification Generator
+  - Internet Protocol
+  - Remote Configuration
+  - Remote Procedure Call
+  - Representational State Transfer
+
+- Bundle
+  - Avatar Prefab
+  - World Scene
+
+- Theme
+  - Dark
+  - Light
+
+- Support
+  - Android
+  - Windows
+
+- Preference
+  - Editor
+  - Player
+
+- Script
+  - Bloodborne Asset Bundle
+  - Bloodborne Background
+  - Bloodborne Thumbnail
+
+- Shader
+  - Thumbnail
+
+## Variable
+
+- `{Build}` - The current build for Bloodborne SDK.
+- `{Version}` - The current version for Bloodborne SDK.
+- `{Date}` - The current date for Bloodborne SDK.
+- `{Avatar}` - The current avatar on the pipeline manager.
+- `{World}` - The current world on the pipeline manager.
 - `{Project}` - The project name for Discord Rich Presence. Enter in the custom text field, on the settings tab.
 - `{Scene}`- The scene name for Discord Rich Presence. Enter in the custom text field, on the settings tab.
 - `{Play}` - The play state event for Discord Rich Presence. Enter in the custom text field, on the settings tab.
@@ -91,16 +149,18 @@
   - Pause
   - Unpause
 
-## **Important**
+## Plugin
 
-- [BUG](BUG.md)
+- `DiscordRPC.dll`
+- `NativeNamedPipe.dll`
+- `Newtonsoft.Json.dll`
+- `UnityNamedPipe.dll`
+
+## Markdown
+
 - [CHANGELOG](CHANGELOG.md)
 - [CONTRIBUTOR](CONTRIBUTOR.md)
 - [FAQ](FAQ.md)
-- [HELP](HELP.md)
 - [LICENSE](LICENSE.md)
 - [NOTICE](NOTICE.md)
 - [README](README.md)
-- [SPONSOR](SPONSOR.md)
-- [TODO](TODO.md)
-- [VERSION](VERSION.md)
