@@ -42,7 +42,7 @@
 
 ## Unity
 
-- 2018.4.20f1
+- 2019.4.29f1
 
 ## Build
 
@@ -53,11 +53,11 @@
 
 ## Version
 
-- 11.0
+- 12.1
 
 ## Date
 
-- 2021.07.24.01.59
+- 2021.08.07.13.30
 
 ## Information
 
@@ -69,6 +69,7 @@
   - Auto Remove Shaders
   - Bug Fixes
   - Bypass Limiters
+  - Overall Performance Spoofer
   - Performance Improvements
 
 - Bypass
@@ -86,7 +87,10 @@
   - Artwork Banner
   - Asset Path
   - Avatar Thumbnail
+  - Avatar Performance
   - Client Path
+  - Quest Avatar Limiter
+  - Quest World Limiter
   - Rich Presence
   - Upload Panel
   - User Interface
@@ -102,6 +106,7 @@
   - Remote Configuration
   - Remote Procedure Call
   - Representational State Transfer
+  - Shortcut Keybinds
 
 - Bundle
   - Avatar Prefab
@@ -116,8 +121,8 @@
   - Windows
 
 - Preference
-  - Editor
-  - Player
+  - EditorPrefs
+  - PlayerPrefs
 
 - Script
   - Bloodborne Asset Bundle
@@ -147,8 +152,14 @@
   - Pause
   - Unpause
 
+## Shortcut
+
+- `ALT + C` - Clear Console
+- `ALT + D` - Delete Cache
+
 ## Plugin
 
+- `Bloodborne.dll`
 - `DiscordRPC.dll`
 - `NativeNamedPipe.dll`
 - `Newtonsoft.Json.dll`
@@ -157,7 +168,7 @@
 ## Markdown
 
 - [CHANGELOG](CHANGELOG.md)
-- [CONTRIBUTOR](CONTRIBUTOR.md)
+- [CONTRIBUTING](CONTRIBUTING.md)
 - [FAQ](FAQ.md)
 - [LICENSE](LICENSE.md)
 - [NOTICE](NOTICE.md)
