@@ -157,9 +157,12 @@
 - `ALT + C` - Clear Console
 - `ALT + D` - Delete Cache
 
-## Plugin
+## Library
 
 - `Bloodborne.dll`
+
+## Plugin
+
 - `DiscordRPC.dll`
 - `NativeNamedPipe.dll`
 - `Newtonsoft.Json.dll`
