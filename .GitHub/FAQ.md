@@ -1,4 +1,4 @@
-# **FAQ**
+# FAQ
 
 1. Is the modified SDK against VRChat's ToS and is it safe to use?
     - Bloodborne SDK is against VRChat's ToS. It is considered safe and it's not very likely that you will get banned because of it, there is no way of checking that you are using a modified SDK.
@@ -11,13 +11,13 @@
 5. What does the SDK do and how does it differ from other modified SDK's?
     - The SDK bypasses all limitations, as well as offers a lot of useful and customizable features. A lot of bugs have also been fixed from the original VRChat SDK. The package is smaller in size, meaning that importing will be extremely fast.
 6. Are there any other releases?
-    - Yes, there are alpha, beta, public, and private releases. You can get alpha and beta early access if you have an active membership, before the software development kit gets released to the public. The private release will be opening in near the future if you have an active membership as well.
+    - Yes, there are alpha, beta, public, and private releases. You can get alpha and beta early access if you have an active membership, before the software development kit gets released to the public.
 7. Can you implement a new feature to the SDK?
     - I am open to suggestions from anyone, but will take into consideration more the requests of people who support me.
 8. Is the SDK open source?
     - The SDK is obfuscated, at least my library, which includes most of my code. The reason for this is that I don't want other people snooping around and skidding my methods, as well as there might be sensitive data, that I don't want people to see.
-9.  Do you make custom SDK's?
-    - No, I will not make any custom SDK's for any one, no matter the reason.
+9. Do you make custom SDK's?
+    - No, I will not make any custom SDK's for anyone, no matter the reason.
 10. Will the SDK get discontinued at some point?
     - As long as I am alive, as well as have the support to maintain and keep working on it, then it will not get deprecated.
 

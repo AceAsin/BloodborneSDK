@@ -33,12 +33,36 @@
 
 ## Support
 
-- You can support me by creating a free account, following me on [GitHub](https://github.com/AceAsin) and starring my repositories. If you wish to donate, then please visit to [Buy Me A Cofee](https://buymeacoffee.com/aceasin) or [Ko-Fi](https://ko-fi.com/aceasin)
+- The project began for personal and educational purposes at first, but it slowly grew and became something greater. Thank you so much to everyone that supports me in any way!
+- You can support me by creating a free account, following me on [GitHub](https://github.com/AceAsin) and starring my repositories. If you wish to donate, then please visit [Buy Me A Cofee](https://buymeacoffee.com/aceasin) or [Ko-Fi](https://ko-fi.com/aceasin).
+
+## Notice
+
+- The developer Ace Asin and Bloodborne are in no way, shape, or form affiliated with VRChat Inc. The use of Bloodborne SDK means that you agree and acknowledge the fact that it is against VRChat's [Terms of Service](https://hello.vrchat.com/legal) and [Community Guidelines](https://hello.vrchat.com/community-guidelines). I will not be held responsible for any bans that might occur, use at your own risk.
+- I am a professional and highly trusted developer that takes privacy and security very seriously. I will never log any personal or sensitive information, at risk of tarnishing my reputation, and the software development kit does not contain anything malicious. I will never attack or harm any user, over any reason, for whatever purpose, please rest assured.
 
 ## Important
 
 - The image and video previews have been removed from the repository, since the software development kit is constantly changing and evolving.
-- The software development kit saves your settings on a `.asset` file and editor preferences. You can reset the `.asset` file back to default by going to the setting tab, when you have the control panel open. You can delete the editor preferences by going to `Computer\HKEY_CURRENT_USER\SOFTWARE\Unity Technologies\Unity Editor 5.x` on your registry editor and deleting all of the keys that begin with `Bloodborne`. It's very important that you only delete keys that begin with `Bloodborne`. You can open your registry by hitting `Windows + R`, then typing `regedit`.
+- The software development kit saves your settings on a `Setting.asset` file and `EditorPrefs`/`PlayerPrefs`. You can reset the `Setting.asset` file back to default by going to the setting tab on the control panel or by simply deleting the `VRCSDK/Bloodborne/Cache/Setting.asset` file. You can delete the editor preferences by going to your registry editor and deleting all of the keys that begin with `Bloodborne`. It's very important that you only delete keys that begin with `Bloodborne`. The registry paths depending on your operating system can be copied from below. The player preferences can be deleted by going to `Bloodborne>Utility>Clear Cache and PlayerPrefs` or `Bloodborne>Utility>SDK2>Clear Cache and PlayerPrefs`.
+
+### Windows
+
+```sh
+Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
+```
+
+### macOS
+
+```sh
+~/Library/Preferences/com.unity3d.UnityEditor5.x.plist
+```
+
+### Linux
+
+```sh
+~/.local/share/unity3d/prefs
+```
 
 ## Unity
 
@@ -53,11 +77,11 @@
 
 ## Version
 
-- 12.1
+- 13.0
 
 ## Date
 
-- 2021.08.07.13.30
+- 2021.08.22.15.30
 
 ## Information
 
@@ -67,10 +91,12 @@
   - Auto Fix Issues
   - Auto Remove Scripts
   - Auto Remove Shaders
+  - Auto Updater
   - Bug Fixes
   - Bypass Limiters
   - Overall Performance Spoofer
   - Performance Improvements
+  - Shortcut Hotkeys
 
 - Bypass
   - Audio Limiter
@@ -97,16 +123,19 @@
 
 - Implementation
   - Application Programming Interface
-  - Automatic Updater
   - Content Delivery Network
   - Discord Rich Presence
   - Domain Name System
-  - Hardware Identification Generator
   - Internet Protocol
+  - Inter Process Communication
   - Remote Configuration
   - Remote Procedure Call
   - Representational State Transfer
-  - Shortcut Keybinds
+  - Unique Device Identification
+
+- Generator
+  - GUID
+  - UUID
 
 - Bundle
   - Avatar Prefab
@@ -124,6 +153,15 @@
   - EditorPrefs
   - PlayerPrefs
 
+- Library
+  - Bloodborne.dll
+
+- Plugin
+  - DiscordRPC.dll
+  - NativeNamedPipe.dll
+  - Newtonsoft.Json.dll
+  - UnityNamedPipe.dll
+
 - Script
   - Bloodborne Asset Bundle
   - Bloodborne Background
@@ -132,6 +170,10 @@
 - Shader
   - Thumbnail
 
+- Server
+  - Authentication
+  - Authorization
+
 ## Variable
 
 - `{Build}` - The current build for Bloodborne SDK.
@@ -139,9 +181,9 @@
 - `{Date}` - The current date for Bloodborne SDK.
 - `{Avatar}` - The current avatar on the pipeline manager.
 - `{World}` - The current world on the pipeline manager.
-- `{Project}` - The project name for Discord Rich Presence. Enter in the custom text field, on the settings tab.
-- `{Scene}`- The scene name for Discord Rich Presence. Enter in the custom text field, on the settings tab.
-- `{Play}` - The play state event for Discord Rich Presence. Enter in the custom text field, on the settings tab.
+- `{Project}` - The project name for Discord Rich Presence.
+- `{Scene}`- The scene name for Discord Rich Presence.
+- `{Play}` - The play state event for Discord Rich Presence.
   - Building
   - Compiling
   - Editing
@@ -149,24 +191,16 @@
   - Testing
   - Updating
 - `{Pause}` - The pause state event for Discord Rich Presence. Enter in the custom text field, on the settings tab.
-  - Pause
-  - Unpause
+  - Paused
+  - Unpaused
 
 ## Shortcut
 
 - `ALT + C` - Clear Console
 - `ALT + D` - Delete Cache
-
-## Library
-
-- `Bloodborne.dll`
-
-## Plugin
-
-- `DiscordRPC.dll`
-- `NativeNamedPipe.dll`
-- `Newtonsoft.Json.dll`
-- `UnityNamedPipe.dll`
+- `ALT + LEFT MB` - Expand/Collapse List
+- `ALT + RIGHT MB` - Expand/Collapse List
+- `ALT + MIDDLE MB` - Expand/Collapse List
 
 ## Markdown
 
@@ -174,5 +208,4 @@
 - [CONTRIBUTING](CONTRIBUTING.md)
 - [FAQ](FAQ.md)
 - [LICENSE](LICENSE.md)
-- [NOTICE](NOTICE.md)
 - [README](README.md)
