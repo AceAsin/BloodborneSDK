@@ -1,8 +1,9 @@
 # **Bloodborne**
 
+[GitHub]: https://github.com/AceAsin
 [Discord]: https://discord.gg/U8vHS7y
 [Patreon]: https://patreon.com/AceAsin
-[BuyMeACofee]: https://buymeacoffee.com/aceasin
+[BuyMeACoffee]: https://buymeacoffee.com/aceasin
 [Ko-Fi]: https://ko-fi.com/aceasin
 
 <div align='center'>
@@ -28,23 +29,27 @@
 
 ## Download
 
-- The download can be found on the server, [ΛCE ΛSIN](https://discord.gg/U8vHS7y). There's also more information on the server, so come stop by and say hello.
+- The download can be found on the server, [ΛCE ΛSIN][Discord]. There's also more information on the server, so come stop by and say hello.
 - If you want to share the package, then please redirect people to the official discord server, so that they may download the package from the respected source.
 
 ## Support
 
-- The project began for personal and educational purposes at first, but it slowly grew and became something greater. Thank you so much to everyone that supports me in any way!
-- You can support me by creating a free account, following me on [GitHub](https://github.com/AceAsin) and starring my repositories. If you wish to donate, then please visit [Buy Me A Cofee](https://buymeacoffee.com/aceasin) or [Ko-Fi](https://ko-fi.com/aceasin).
+- You can support me by creating a free account, following me on [GitHub][GitHub] and starring my repositories. If you wish to donate, then please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi]. If you however would like to receive early access and exclusive content, then consider becoming a patron, over at [Patron][Patreon].
 
 ## Notice
 
 - The developer Ace Asin and Bloodborne are in no way, shape, or form affiliated with VRChat Inc. The use of Bloodborne SDK means that you agree and acknowledge the fact that it is against VRChat's [Terms of Service](https://hello.vrchat.com/legal) and [Community Guidelines](https://hello.vrchat.com/community-guidelines). I will not be held responsible for any bans that might occur, use at your own risk.
-- I am a professional and highly trusted developer that takes privacy and security very seriously. I will never log any personal or sensitive information, at risk of tarnishing my reputation, and the software development kit does not contain anything malicious. I will never attack or harm any user, over any reason, for whatever purpose, please rest assured.
+
+## Statement
+
+- I am a professional and highly trusted developer that takes privacy and security very seriously. The software development kit does not contain anything malicious. I will never log any personal or sensitive information, at risk of tarnishing my reputation and credibility. I will never attack or harm any user, over any reason, for whatever purpose, please rest assured.
+- I am an individual working on the software development kit all by myself, thousands of hours have gone into the project ever since the first release, constantly updating and adding features.
 
 ## Important
 
-- The image and video previews have been removed from the repository, since the software development kit is constantly changing and evolving.
-- The software development kit saves your settings on a `Setting.asset` file and `EditorPrefs`/`PlayerPrefs`. You can reset the `Setting.asset` file back to default by going to the setting tab on the control panel or by simply deleting the `VRCSDK/Bloodborne/Cache/Setting.asset` file. You can delete the editor preferences by going to your registry editor and deleting all of the keys that begin with `Bloodborne`. It's very important that you only delete keys that begin with `Bloodborne`. The registry paths depending on your operating system can be copied from below. The player preferences can be deleted by going to `Bloodborne>Utility>Clear Cache and PlayerPrefs` or `Bloodborne>Utility>SDK2>Clear Cache and PlayerPrefs`.
+- SDK2 is now deprecated and will stop getting updates, when that happens, further support will seize to exist.
+
+## System
 
 ### Windows
 
@@ -66,7 +71,7 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 ## Unity
 
-- 2019.4.29f1
+- 2019.4.31f1
 
 ## Build
 
@@ -77,16 +82,17 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 ## Version
 
-- 13.0
+- 14.2
 
 ## Date
 
-- 2021.08.22.15.30
+- 2021.11.11.13.29
 
 ## Information
 
 - Modification
-  - Anti Yoink
+  - Anti Rip
+  - ~~Anti Yoink~~
   - Auto Fill Visemes
   - Auto Fix Issues
   - Auto Remove Scripts
@@ -94,7 +100,6 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
   - Auto Updater
   - Bug Fixes
   - Bypass Limiters
-  - Overall Performance Spoofer
   - Performance Improvements
   - Shortcut Hotkeys
 
@@ -105,7 +110,6 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
   - Mesh Limiter
   - Particle Limiter
   - Polygon Limiter
-  - Quest Limiter
   - Shader Limiter
   - Station Limiter
 
@@ -115,8 +119,6 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
   - Avatar Thumbnail
   - Avatar Performance
   - Client Path
-  - Quest Avatar Limiter
-  - Quest World Limiter
   - Rich Presence
   - Upload Panel
   - User Interface
@@ -134,6 +136,7 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
   - Unique Device Identification
 
 - Generator
+  - HWID
   - GUID
   - UUID
 
@@ -206,6 +209,5 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 - [CHANGELOG](CHANGELOG.md)
 - [CONTRIBUTING](CONTRIBUTING.md)
-- [FAQ](FAQ.md)
 - [LICENSE](LICENSE.md)
 - [README](README.md)
