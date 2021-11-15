@@ -34,7 +34,7 @@
 
 ## Support
 
-- You can support me by creating a free account, following me on [GitHub][GitHub] and starring my repositories. If you wish to donate, then please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi]. If you however would like to receive early access and exclusive content, then consider becoming a patron, over at [Patron][Patreon].
+- You can support me by creating a free account, following me on [GitHub][GitHub] and starring my repositories. If you wish to donate, then please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi]. If you however would like to receive early access and exclusive content, then consider becoming a patron, over at [Patreon][Patreon].
 
 ## Notice
 
