@@ -29,7 +29,7 @@
 
 ## Download
 
-- The download can be found on the server, [ΛCE ΛSIN][Discord]. There's also more information on the server, so come stop by and say hello.
+- The download can be found on the server, [Λ C Ξ Λ S I N][Discord]. There's also more information on the server, so come stop by and say hello.
 - If you want to share the package, then please redirect people to the official discord server, so that they may download the package from the respected source.
 
 ## Support
