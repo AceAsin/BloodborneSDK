@@ -1,299 +1,205 @@
 # Changelog
 
-Ace Asin — 08/30/2021
+Ace Asin — 11/18/2021
 
-- Shaders are no longer getting stripped for Quest/Android, should work the same as release version 9.0, these include standard, legacy, rero shaders, and more.
+- Fixed the Shader Stripper toggle and some internal changes regarding the the process of data clearance, now it will not only prevent android shader stripping, but also android post processing stripping. The toggle being used was wrong due to being renamed. The reset cache button was also incorrect and not deleting the correct preference key upon button press.
 
-Ace Asin — 08/30/2021
+- The errors were made due to rushed changes and modifications, since it was preventing android shader stripping internally, which left no room for testing. It's another reason as to why it needed to remain private for a while, so that it reached a smaller audience, until it was perfected, but users didn't like that and now the previous release is bugged.
 
-- Fixed a bug where the Discord RPC HH, MM, and SS placeholders were not marked as empty or null.
+- It should be good moving forward nonetheless.
 
-Ace Asin — 08/30/2021
+Ace Asin — 11/18/2021
 
-- When you select a pipe, the username, discriminator, and id of the target account will appear immediately if a client is opened when you launch your editor. It's useful so that you know which pipe belongs to which account. It's dynamic, so the user information should appear and disappear as you open and close a client. You won't be able to connect to an account if the client pipe is considered null, meaning that no client exists for that specific pipe. The text color will also appear gray if a client exists but it's disconnected or unauthorized. If the client exists and it's connected, as well as authorized, then the user text color will appear as white.
+- The Quest section has been readded, since you can now load into worlds that are up to 100 MB in size.
 
-- Worked hard to optimize multiple clients to the best best of my ability, since previously they were just too buggy and caused too many problems. That's why I only allowed and worked with one client at a time before, this time around multiple clients seem more stable.
+Ace Asin — 11/18/2021
 
-- It might take a while for the user information to show if you just launched or compiled in your editor, or perhaps you just opened a new client, so just wait patiently. It can take up to 15 seconds, sometimes even more, but this usually only happens during development, should be instant for everyone during production. After you've been authorized, then you should be good to go and all custom features will unlock for authorized users.
+- Behavior for all rich presence text fields have been fixed, recently noticed a small bug that would set values in real-time, but not update, until any sort of compilation occurred. The bug would occur when the Real Time toggle was disabled, when enabled everything behaved accordingly.
 
-Ace Asin — 08/30/2021
+Ace Asin — 11/18/2021
 
-- The search bars for the manager and asset toolbar sections will now show a little x icon, clicking it will clear what's on the search bar and set the focus control to null.
+- Fixed some stuff from the Environment section, should now use Default-Skybox.mat by default instead of None when a new Setting.asset file is created. It also now actually saves the object properties to the Setting.asset file, so they'll be the same as you left them when you restart your editor.
 
-Ace Asin — 08/31/2021
+- Setting the Skybox to None will result in using the fallback Default-Skybox.
 
-- The control panel is now completely responsive when the window is docked. I hadn't really ever noticed this, because I never docked the control panel and always had it floating on it's own. The menu looked completely broken when resizing it past it's fixed width. It will now rescale accordingly and everything will look fine. Ended up coding a method to detect when the window is docked, just to fix a few unalignments when docked.
+- Setting the Sun to None will result in using the fallback Directional Light.
 
-- A lot of the issues had to do with my methods being mixed with VRC's original methods, which have a lot of useless code that can be overly simplified, removed a lot of their garbage in order to make the control panel 100% responsive.
+- If you do not want to display any skybox, then simply uncheck the skybox from your scene toggles.
 
-Ace Asin — 08/31/2021
+Ace Asin — 11/18/2021
 
-- The Shader System toggle has been removed when targeting Android/Quest, as it was kind of useless, bypass did not work correctly. Now there is no shader stripper by default when it comes to Android/Quest, completely bypassed those limiters, won't be needing that option anymore. It only served as an experimental option and after confirmation it proved to serve no purpose as there were no changes when having it checked or unchecked.
+- The overall performance spoofer has been readded, only use if you don't care and wish to ignore the overall performance stats. It is not intended to work in-game, as your stats will get rescanned, since it's not a modification to the client.
 
-Ace Asin — 08/31/2021
+Ace Asin — 11/18/2021
 
-- Previously had changed the clear console hotkey method for testing purposes and never changed it back, so it hasn't been working. Fixed the issue and reverted those changes, working fine once again.
+- Added a new favorite star icon to the left of assets, clicking on the star will change the icon from being empty to full, meaning that the asset is now favorited. The new icons are fully dynamic, lots of work and time went into not only aligning them to perfection, but also their functionality.
 
-Ace Asin — 08/31/2021
+- The favorited assets will not appear on a new list, they will simply be able to be filtered by favorites. The algorithm's time complexity has also been optimized, so assets should be much more efficient.
 
-- You are now able to login by pressing the return key, so enter after you type in your credentials on the authentication window. It's mainly a really simple feature that I wanted to implement.
+- Forgot to change a bool on the last release, which caused a bug when trying to expand the public asset list when holding alt and left clicking. The shortcut enhancement would not work, since it was using the original foldout bool, instead of the more advanced and custom one I created.
 
-Ace Asin — 08/31/2021
+Ace Asin — 11/19/2021
 
-- The authorization window has been slightly improved, such as sign in button being disabled when there's no credentials typed, also setting the focus control to null after a login attempt.
+- Simplified the way that custom generic dropdown menus got the exact static position, no matter the width/height or responsiveness of the window, no more need for complicated mathematical formulas. They're also not using screen width or the window position properties, since previously they relied on those. These more advanced dropdown menus act and look the same as other original menus, but with some extra capabilities.
 
-Ace Asin — 09/01/2021
+Ace Asin — 11/19/2021
 
-- Added an auto reconnect button toggle for the client component, it's enabled by default. There's also been a few client authorization improvements and bug fixes.
+- The asset lists will not reset back to the default false upon assembly reloading. This means that when you execute any form of compilation or enter and exit play mode, then the toggle states will remain exactly the same. They will only reset back to the default false if you restart your editor or reset all of your settings back to default. I'm not going to lie that it was kind of annoying having the lists constantly reset.
 
-Ace Asin — 09/02/2021
+Ace Asin — 11/19/2021
 
-- The GUI initializes less styles and is now more efficient, removed and cleaned up a lot of the GUI styles.
+- Your access permissions will now be remembered per session, once again... assembly reloading or any sort of compilation such as entering and exiting play mode will not reset your access permissions. They will however be updated once you reconnect again. If you disconnect, then the permissions will be reset as usual. If a client is required in order to access some features, then those will remain disabled when unauthenticated. This was also quite annoying, having to wait to connect in order to get access to some features after entering and exiting play mode.
 
-Ace Asin — 09/03/2021
+Ace Asin — 11/19/2021
 
-- Added an auto connect button toggle, same as the previously added auto reconnect button toggle. It's recommended that you keep both of these button toggles enabled, so that you don't encounter any authorization issues.
+- The filter and search for asset lists have been further improved, will not show empty sub foldout menus for categories if the filter or search don't match any items.
 
-Ace Asin — 09/07/2021
+Ace Asin — 11/19/2021
 
-- Changed content for the overall performance spoofer, should allow you to set it back to none now. Depending on your settings the buttons will either be active or inactive, helpful hover messages also dynamically change. It won't allow you to set a new performance option if it's already set to the one you're trying to set.
+- The buttons for assets have been changed to an action dropdown menu with the same functions. The asset functions and package titles will appear grayed out if the target asset is not downloaded.
 
-Ace Asin — 09/08/2021
+Ace Asin — 11/22/2021
 
-- Removed unnecessary log from when you delete a package, previously forgot to remove it during development.
+- The asset section has been heavily modified, spend a lot of time aligning everything to perfection, pixel by pixel, optimizing and creating new methods. Instead of the asset and client path function buttons, there's now a single button with a gear icon. A dropdown menu with options that have the same functionality as the legacy buttons will appear when you click the new gear icon. The fetch button has also been replaced with a refresh button icon when active and a loading button icon when inactive, it becomes inactive when it's fetching data from the servers. There's a favorite icon all the way to the right side of both public and private lists, decided to give each their own. It's the main favorite toggles for the lists that will display only favorite assets when enabled or all assets when disabled. Over on the asset store assets, they still act as a toggle and only display one asset store author and all of their assets at a time, but the style has slightly changed. They now look like button toggles and behave similar to a toolbar, same effects when a button is in the state of normal, hover, focus, and active. The search bar now has a background to complement the rest of the dropdown labels. The author labels now look a bit different to help distinguish them from the dropdown labels.
 
-Ace Asin — 09/08/2021
+Ace Asin — 11/22/2021
 
-- Assets are now more compact when there's more than one asset per author, previously there was a separator in between assets. There's also now a new asset list for the asset store packages that are in your Asset Store-5.x folder. Anything that you download from the Asset Store will show on this new list.
+- Added the major tag to the version in the setting file and server data, currently it's at v2, so next release will be 2.15.0.
 
-Ace Asin — 09/08/2021
+Ace Asin — 11/22/2021
 
-- Quick remote fix, screen freeze shader wasn't properly named on the asset list and had no version tag. The download from the server would always fail due to this mistake on my part. The cache from the load balancer is currently invalidating as I speak, it will properly show after it's completed.
+- The world default max upload size has been increased and set to 100 MB, it's multiplied and divided by an integer of 1024, not 1000.
 
-Ace Asin — 09/08/2021
+Ace Asin — 11/22/2021
 
-- Styles are now pre-initialized when calling them, they will no longer need to be initialized and assigned their properties, will prevent any potential errors from occurring.
+- Preset the Bloodborne background to both the avatar and world prefabs, since it takes a second to load when it's not already preset, don't want to hit anyone with a white background for that duration.
 
-Ace Asin — 09/09/2021
+Ace Asin — 11/22/2021
 
-- Splash screen data is now acquired remotely from the dedicated host, which makes it possible to update it whenever and the changes will display for everyone. The splash screen menu has also been optimized by reducing the amount of update calls.
+- Fixed a bug that didn't allow users to click the Build & Publish for Android button when it came to worlds.
 
-Ace Asin — 09/25/2021
+Ace Asin — 11/25/2021
 
-- Your latest build avatar or world size will now constantly be shown by reading the custom.vrca and customscene.vrcw files that are modified after building and compiling. The avatar and world api must be true in order to show the size with the rest of the avatar or world settings on the builder, meaning that you attempted to upload and a blueprint id was created or you attached a valid blueprint id.
+- Only private releases will contain the new menu as soon as it’s done. It helps you manage everything on your vrc account.
 
-Ace Asin — 09/25/2021
+- It’s taking quite a bit, but fairly confident that it will be done soon, with full functionality.
 
-- Added a real time toggle option, having it enabled will update your rich presence without having to click the update button in real time. Decided to leave the update button intact when real time is enabled, just in case users might want to reset some settings, such as the elapsed time. Also incremented the end duration by 1000 ms, since previously discord set an offset of 1000 ms by default. It's just to combat that little misconception and equilibrate the elapsed time. The start duration seems to be fine, no offset was detected.
+Ace Asin — 12/03/2021
 
-Ace Asin — 09/25/2021
+- An End User License Agreement (EULA) will now appear at startup before using the Software Development Kit (SDK).
 
-- The toggle buttons for the client, auto connect and auto reconnect will be removed and kept enabled by default for now, because I already know that they will only cause issues for some users. They will be added at a later time, since I need to figure out a way to make them more readable and simpler to use, probably by adding potential warnings or dialogs when attempting to change them.
+- The EULA is obtained remotely in case it ever needs to be updated. It requires everyone to accept it once and your decision will be saved in your editor preferences. If it does get updated, editor preferences are deleted, or the editor version changes, then users will have to accept it again, since it will be different than before. If it is declined, then use of Bloodborne will be prohibited and the editor will proceed to exit. If the window is closed or any sort of compilation occurs while it's active and the window becomes out of scope, then the editor will also proceed to exit. It's required and nothing on the control panel will load until it's accepted. If a major change happens with or without notice and the way that the EULA is obtained changes, then all other previous releases will become void. You will need to scroll all the way to the bottom of the EULA in order to be able to accept it. If you are a regular user and don't do anything that's very obviously against Ace Asin or Bloodborne, then you should be fine.
 
-Ace Asin — 09/30/2021
+Ace Asin — 12/03/2021
 
-- Made progress on the new menu to manage everything on your account directly from the SDK, utilizes VRChat's API. The design is complete and open to change in the future.
+- The Setting option on the Control Panel now better compliments the rest of the Software Development Kit, changes to the UI had to be made in order to achieve this. The bold text that separates sections now have a label background and the box background is now behind the scrollbar.
 
-Ace Asin — 10/07/2021
+Ace Asin — 12/03/2021
 
-- Greatly optimized fetching friend list and loading data, toggle to load user images on initial load to help towards performance in slow computers, by default it'll be set to off, since a user might have a large friend list.
+- Toggle sections are now in the form of a custom dropdown menu, since the amount of toggles are rapidly increasing. This change won't give you tooltip information on text hover anymore, they will be documented instead.
 
-Ace Asin — 10/08/2021
+Ace Asin — 12/03/2021
 
-- There was a whitelist already implemented for development purposes, but now there is also a blacklist. If you for some reason become blacklisted, then you won't be able to use future software development kits anymore. It's detected by your discord user id and vrchat user id. The unity editor will simply force quit on blacklisted users to prevent further use.
+- Added support for 2FA, it was already implemented but having the remember toggle enabled caused issues due to the way things were saved. Nonetheless, methods have been improved and optimized, they are now only making one request when attempting to login. Previously had to make 2 requests, one to validate and save/update preset account credentials or save/update remember me credentials, and another one to actually login. Validation of credentials occurs in the actual login attempt through a special method that handles everything, this makes it easier to handle 2FA and doesn't interfere with anything else or require multiple requests. I encountered a small bug on the preset account, would throw errors when deleting all accounts and being on the selection of the last account, it has been fixed. Previously handled the error by catching it, but after these changes it was clear to me that it still persisted.
 
-Ace Asin — 10/10/2021
+Ace Asin — 12/03/2021
 
-- Decisions have been made regarding exclusive content, some things might get moved around, but nothing has become final. They will also be open to change in the future, please understand and respect any decision that is made.
+- Resetting settings back to default will now also clear your saved user data, meaning that cookies, credentials, tokens, and player preferences will be cleared.
 
-Ace Asin — 10/10/2021
+Ace Asin — 12/04/2021
 
-- Added back the original VRC Check For Updates menu method.
+- More bug fixes and optimizations have been made on the login window. The preset dropdown menu is now using editor preferences, instead of a value from the scriptable object, it will better remember it's value if changing between projects. All custom and more advanced generic dropdown menus better handle focus control.
 
-Ace Asin — 10/10/2021
+Ace Asin — 12/04/2021
 
-- Fixed a bug on newer software development kits regarding a missing animator, their no error boolean wasn't working properly, would cause the entire builder to break and throw error.
+- There are 2 new functions at the bottom of the preset dropdown menu, remove enabled and disabled. It will either remove all accounts which display as enabled or all accounts which display as disabled. If there are no enabled or disabled accounts, then the options will be grayed out and disabled themselves. If you have too many accounts and don't have access to an unlimited amount then removing the enabled accounts will make some of the other disabled accounts enabled. It's a bit confusing, but not much to worry about, resetting the settings back to default removes all of them anyways.
 
-Ace Asin — 10/10/2021
+Ace Asin — 12/04/2021
 
-- The wrong unity version message will be hidden on the authentication section, but will still appear as an error on the builder when you attach a descriptor.
+- Separated order options from the filter dropdown on the new menu, where your entire friends list is displayed, so there's a search bar, filter dropdown, and order dropdown. The filter and search can be used in combination with each other, they lower the amount of users that are displayed upon what's searched or filtered. The order dropdown on the other hand helps order users in ascending or descending order, order can be done by display name or friend number count at the moment. It's worth mentioning that multiple filter options can be active at the same time, but only one order option can be active at a time.
 
-Ace Asin — 10/10/2021
+Ace Asin — 12/05/2021
 
-- Alpha releases will be on a trial for testers moving forward, since they are only really meant to test features and make sure that they function. Patron's on the other hand will be able to use early releases for as long as they remain a Patron with no trial limit.
+- Created a popup window class. It is used to display information when a friend, avatar, or world is clicked.
 
-Ace Asin — 10/12/2021
+Ace Asin — 12/06/2021
 
-- Toggle options on the setting section will now be listed in alphabetical order, new and experimental force fallback option has also been added.
+- Added a moderation section on the new menu, they display all player moderation actions against users. Clicking on a moderation that you made against a target will display a small popup window with actions. It contains a search bar, filter and order dropdown as usual. All moderations displayed have a different background depending if the list index is even or odd. The selected moderation will change the background color for easier identification, support for both dark and light theme.
 
-Ace Asin — 10/12/2021
+Ace Asin — 12/07/2021
 
-- You are now able to change the skybox material through the setting section for easier accessibility. Also added the sun source selection option just in case anyone needs it.
+- Added a toolbar at the bottom of the moderation section. It took me a while to get its functionality working perfectly, since I encountered too many adversities. The toolbar displays page numbers and arrows for easier accessibility.
 
-Ace Asin — 10/14/2021
+Ace Asin — 12/08/2021
 
-- There was a bug with the quest limiter, after compiling anything it utilized the default values. This prevented some users from uploading if their avatar was above 10 MB or their world was above 50 MB. It was a simple fix, set the default values to be updated with the custom values on initial load, so that after compiling anything it would utilize the custom values.
+- Further improved algorithms for the moderation section, now displaying current and total pages, as well as current and total amount of items per page. There's also 2 new buttons for skipping to the start or end of the pages. All filter and order options are now using session states, instead of editor prefs, because users might forget to clear them and might be confused as to why not much is showing once they start a new instance.
 
-Ace Asin — 10/14/2021
+Ace Asin — 12/11/2021
 
-- Noticed another bug, the world limiter toggle was using the avatar limiter toggle instead of it's own. It's been fixed and it's now using it's appropriate toggle.
+- Deleting an item from the moderation section will require the user to right click, it will highlight the active item on the list and a small popup window will appear with a delete button action. It makes a put request and removes the item from the cached/fetched list locally as well.
 
-Ace Asin — 10/14/2021
+Ace Asin — 12/11/2021
 
-- Small bug with the cached asset bundles when trying to read the most recent avatar or world sizes, will now delete the key if an error is thrown, as well as not display the asset bundle size for the avatar or world when the bool that is returned equals false.
+- Switching accounts will clear the previous account data and fetch new data from the new account, so that local data does not retain older data. Temporary cached files and local dictionary data, such as images and instances will be retained in order to more efficiently exercise requests and to put less stress on your processor.
 
-Ace Asin — 10/14/2021
+Ace Asin — 12/11/2021
 
-- Fixed the responsiveness of some toolbar buttons when docked that I had forgotten.
+- Created style sheets and extensible markup language files that utilize the new UIElements found in Unity 2019. They allow content customization without limitations. They're also more optimized, only drawn once and do not spam repaint. They're main creation purpose is to style image buttons on the new menu, but they might have other uses in the foreseeable future.
 
-Ace Asin — 10/16/2021
+- Dynamic data that changes, such as images will be handled through internal code, static data will remain on style sheets and extensible markups. If I don't really see the need to have the files, then all new styling will be handled internally as well.
 
-- Added 2 new toggles, Bypass Shader and Force Fallback, under a new category named Experimental. These are in development and need to be tested before making them official. The Bypass Shader toggle will definitely work, as it's just a toggle to allow or deny Standard, Legacy, Particle, etc... shaders, but I did some changes, so it still needs to be tested again.
+Ace Asin — 12/16/2021
 
-Ace Asin — 10/16/2021
+- Made changes to the GUI Builder, it's once again possible to Build & Test/Build & Reload worlds when on an Android environment to check your world size. On both the Avatar and World GUI's all Android defines will be ignored. All GUI checkers are turned off and the build buttons will be enabled no matter what, errors if any will only appear once you click a build button.
 
-- When the cache default button is clicked, all toggles will also be reset back to normal.
+Ace Asin — 12/21/2021
 
-Ace Asin — 10/16/2021
+- Fixed the offset of the favorite icons, for some reason their position was different once the class library was built.
 
-- Fixed a few offset imperfections for the user interface, a new scrollbar style has also been created and slightly modified.
+- Not fixed, seems to keep changing , marked as bug for now.
 
-Ace Asin — 10/19/2021
+Ace Asin — 12/21/2021
 
-- All 3 builds are finished and have been updated to Unity 2019.4.30f1.
+- Changed the assembly's target framework from .NET Standard 2.0 to .NET Framework 4.7.1, since the API Compatibility Level in Unity is set to .NET 4.x. It was confusing and would prevent the assembly from compiling in Unity after powerful protection technology was applied.
 
-Ace Asin — 10/20/2021
+- This change should also stop a dialog from appearing that gives you the option to change the API Compatibility Level. If you followed through with it, then it would change the API Compatibility Level to .NET Standard 2.0, which then prevented the assembly from compiling.
 
-- If you're not authenticated as a patron or tester, then the new experimental toggles, bypass shader and force fallback will be set back to the default false right before uploading as a security feature.
+- It's not compatible with .NET Standard 2.0, because Bloodborne relies on dynamic types, which are only available in .NET 4.x.
 
-Ace Asin — 10/21/2021
+Ace Asin — 12/21/2021
 
-- Now using editor coroutine method to properly run authorization more efficiently after you connect or try to reconnect.
+- The managed dependency UnityNamedPipe.dll has also changed its target framework from .NET Standard 2.0 to .NET Framework 4.7.1.
 
-Ace Asin — 10/21/2021
+Ace Asin — 12/21/2021
 
-- Texture size limiter toggle has been added for Avatar 3.0, toggle will fix and compress expression parameter menu images.
+- Forgot to make changes to the toggles found in the settings for the beta release.  The toggles once again look like they used to in the past.
 
-Ace Asin — 10/21/2021
+Ace Asin — 12/21/2021
 
-- There's now infinite parameters, previously forgot to check something which is why I couldn't get them working.
-Ace Asin — 10/22/2021
+- Fixed the responsive window toggle, it wasn't working after making some static changes. It gets the dynamic window width once again.
 
-- New custom settings have been added for the infinite expression parameters and controls, after making changes to these settings a dialog window will popup with an option to recompile scripts now or at a later time. Script compilation requests are required and must be done on each project, since PlayerPrefs are being used and the ScriptableObject needs to be enabled again. The new section will only show up if you're working on an Avatar 3.0, since that's the only build that has access to expression parameters and controls. Everything on the editor is responsive and working well, you will also notice that it's very similar to the Quest section, still needs to be tested in-game just to make sure that they work.
+Ace Asin — 12/21/2021
 
-Ace Asin — 10/22/2021
+- Fixed some discrepancies regarding dynamic width and resizing of the control panel window. The starting and ending points for the vertical scrollbar on the manager and asset sections have changed. They now better resemble the scrollbar on the setting section. This helps keep content in place by adding flexible spaces, since I noticed that when resizing the window up to a certain point it would cause certain offsets to occur.
 
-- Individual toggles for Discord RPC will now be locked for server boosters only. If you're not a server booster then you won't be able to edit the custom Discord RPC text fields or toggles, only the main Rich Presence toggle that's at the top, which shows and hides Discord RPC.
+- There's also a new toggle called Hide Scrollbar, which does exactly what it says, hides both vertical and horizontal scrollbars, so they do not display at all. It's a nice and simple little feature, scrolling on the other hand will still work with your mouse scroll wheel or a touch pad. I would not hide scrollbars if you are unable to use your mouse scroll wheel or scroll on a touch pad.
 
-Ace Asin — 10/26/2021
+Ace Asin — 12/22/2021
 
-- The experimental toggle Bypass Shader has been renamed to Force Shader.
+- The control panel's banner, toolbar, and signature at the very bottom will no longer stretch when responsive window is toggled off.
 
-Ace Asin — 10/26/2021
+Ace Asin — 12/22/2021
 
-- Made some changes and improvements to the responsiveness of the control panel window, everything should be more efficient and should prevent a previous bug from occurring. There's also a new toggle named Responsive Window, which will stretch the width accordingly and make the control panel responsive, having it unchecked will use fixed width sizes in case users run into any issues. The Splash Screen by default is responsive and will stay responsive no matter what, since it's not meant to be docked.
+- The splash screen window is once again a floating utility window and no longer a normal window, meaning that it cannot be docked, only closed.
 
-Ace Asin — 10/27/2021
+Ace Asin — 12/24/2021
 
-- Fixed alignment issues on content and builder, also moved some stuff around and made improvements to the builder, everything is actually aligned to pure perfection now.
-Ace Asin — 10/28/2021
+- A dialog will appear if the server is down or there's a major change that requires updating in order to use the software.
 
-- New cryptography cipher class has been created to encrypt and decrypt credentials, since I'm adding a new account management system. The security feature was created just in case someone with malicious intend gets a hold of your preset key, to prevent them from stealing your information as a precaution. Information in the key will be encrypted, so you won't have to worry even if someone manages to obtain and read it somehow.
+Ace Asin — 12/24/2021
 
-Ace Asin — 10/30/2021
+- Fixed mono behavior scripts not showing their name after obfuscation by excluding them.
 
-- There's a new account management system, so you can add preset accounts, which is pretty poggers, not gonna lie. On the main account window, there will now be a preset dropdown menu with saved accounts. It will be completely disabled if there are no saved accounts. There is also 2 new buttons, save/update and remove which can be used to manage your saved accounts. You can save/update and remove an unlimited amount of accounts whenever you want, whether they will load the preset credentials is another thing entirely. If you are not a Booster or Patron, then you'll only be able to load the credentials for the first account. If you are a Booster, then you'll be able to load the credentials for the first 2 accounts, so that'll be your main and alt. If you are a Patron, then you'll be able to load all saved accounts with no limitations.
+Ace Asin — 12/24/2021
 
-Ace Asin — 10/31/2021
-
-- Created a new custom dropdown menu for the saved accounts, since it was required to make it more dynamic. If you are unable to access some saved accounts due to not being a Booster or Patron, then they will be disabled and grayed out. It is extremely responsive and efficient, checking and handling errors, as well as everything else accordingly.
-
-Ace Asin — 11/01/2021
-
-- Added a remember me toggle on the login window, will remember your most recent login credentials if valid and automatically fill them out if they're null when you load the window again.
-
-- It works different than the original credentials loader. For that one when you're already logged in and load the window again, it will automatically fill your credentials and login, but if you logout then it deletes your credentials and doesn't remember them.
-
-- This is why the new remember me toggle is an addition and works hand in hand with the preset account management system.
-
-Ace Asin — 11/01/2021
-
-- More information has been added to the account window once logged in, as well as useful buttons. The buttons will copy to the clipboard and display notifications, open a dialog with the type of upload status, and open an external link to your account. I don't want to add too much on this window, as that is something that will be added to the new menu very soon, but it is open to change in the future.
-
-Ace Asin — 11/03/2021
-
-- The recent new data that has been added will reset back to default settings when you click the default reset button. This will include the entire account management system account list, remember me username and password, as well as newly implemented toggles.
-
-Ace Asin — 11/03/2021
-
-- The bug in which asset lists that are not being targeted were opening has been fixed. This was due to using fixed positions and only working properly when opening one asset list at a time, not multiple asset lists. It's been corrected and shortcut enhancements for the foldout/dropdown menus should work flawlessly with multiple opened, since it is now getting and being based on the last rectangle position.
-
-- If you didn't happen to know, the shortcuts enhancements for asset lists are LEFT/MIDDLE/RIGHT MOUSE BUTTON and ALT + LEFT/MIDDLE/RIGHT MOUSE BUTTON, holding down the ALT key will expand and collapse all asset lists. The shortcut enhancements are similar to the hierarchy and work the same.
-
-Ace Asin — 11/03/2021
-
-- Early releases already cause your editor to exit if all pipes fail, but now there's a retry limit of 4 attempts, equivalent to the number of available pipes, just in case you're trying to connect to the same pipe more than once and continuously fail due to not having access to early releases. Also, when attempting to upload on early releases, authorization will be required or else the upload will fail in case some users manage to get past the first authorization window somehow. You won't be able to access the rest of the control panel without authorization first on early releases anyways.
-
-Ace Asin — 11/03/2021
-
-- Forgot to mention this before, but if your Api Compatibility Level is set to .NET 4.x, then you'll be stuck on it, since Bloodborne SDK is preventing users from switching to .NET Standard 2.0. If you switch, then Bloodborne SDK won't work, so there's no point in allowing users to switch, will be reverted back to prevent any issues.
-
-- It does not work if you're already on .NET Standard 2.0, because Bloodborne SDK is unable to compile its assembly. You will have to manually change your Api Compatibility Level to .NET 4.x.
-
-Ace Asin — 11/03/2021
-
-- ~~Moving forward you will be required to be authenticated before uploading or else an error dialog message will appear. It's for security reasons, so that I prevent blacklisted users from using the software development kit. It won't tell you to connect to a client or user, that only happens on early releases, but it's expected when uploading. This doesn't particularly mean that you have to be on the server, that's just if you want to have access to the public asset list. You simply need to be connected to discord so that the backend server can verify your id and make sure that you're not blacklisted.~~
-
-- In second thought the public and private releases will not be needing authorization, only early releases, since I need to verify if users are a patron or tester. I made some changes and official releases will remain the same, so as everything is at the moment.
-
-Ace Asin — 11/04/2021
-
-- Testers will now also have temporary beta access, since it’s also considered an early release, previously testers only had temporary alpha access.
-
-Ace Asin — 11/04/2021
-
-- The Discord RPC callbacks for detecting when you're building and uploading have been improved, also when changing the active avatar and world variables.
-
-Ace Asin — 11/04/2021
-
-- A retry/delay dropdown menu with 4 options has been added to the client section. The options will be 15/30/45/60, which will mark the amount of seconds to wait before attempting to reconnect in case of a disconnection.
-
-Ace Asin — 11/04/2021
-
-- Created a webhook class that will allow users to create and send custom embed message webhooks after an action is completed or upon request in the future.
-
-Ace Asin — 11/05/2021
-
-- The log type has changed, using logger instead of debug with a prefix type now.
-
-Ace Asin — 11/08/2021
-
-- Fixed focus control coming from the new dropdown menu still remaining after login, it was getting applied to the first button in ascending order.
-
-Ace Asin — 11/08/2021
-
-- The shader blocking system for Android/Quest is now available to everyone, it's also been renamed to Shader Stripper.
-
-Ace Asin — 11/08/2021
-
-- The Spoofer and Android/Quest sections have been disabled and won't show at all anymore, since they will be completely overwritten in-game by the client.
-
-Ace Asin — 11/08/2021
-
-- Forgot to mention that the unlimited expression parameters and controls were temporarily disabled until further notice. I will eventually attempt to get them to work, if not possible then I'll add a different method which doesn't allow unlimited expression parameters and controls to work, but it does allow a lot more.
-
-Ace Asin — 11/08/2021
-
-- The Responsive Window toggle will be disabled by default, due to users having issues getting the correct screen width. I am unsure as to why this happens, might just have to do with the user's monitor and resolution.
-
-Ace Asin — 11/08/2021
-
-- The experimental toggle Force Fallback has been removed on official releases, as having the special fallback tag doesn't seem to affect anything. Shader Stripper is now an official toggle and has been moved from the Experimental section to the Toggle section.
-
-Ace Asin — 11/10/2021
-
-- Fixed a condition bool on the authentication window which shows and hides the advanced setting API and it's dropdown menu. It wasn't able to handle multiple lines of code due to missing the open and close braces. A temporary fix at the moment is to go to Setting > Developer > Extra and enable the toggle.
-
-Ace Asin — 11/11/2021
-
-- The GUI focus control will now be set to null when switching between toolbar options, this will help prevent carrying over the focus control from custom generic menus.
+- Fixed the default client paths, will now look for both Oculus and Steam directories. The edit function is also fixed, if the path is invalid, then it will not try to open from the invalid path, but instead the base file explorer, so that users can set the correct client path.

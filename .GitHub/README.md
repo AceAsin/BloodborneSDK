@@ -36,15 +36,6 @@
 
 - You can support me by creating a free account, following me on [GitHub][GitHub] and starring my repositories. If you wish to donate, then please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi]. If you however would like to receive early access and exclusive content, then consider becoming a patron, over at [Patreon][Patreon].
 
-## Notice
-
-- The developer Ace Asin and Bloodborne are in no way, shape, or form affiliated with VRChat Inc. The use of Bloodborne SDK means that you agree and acknowledge the fact that it is against VRChat's [Terms of Service](https://hello.vrchat.com/legal) and [Community Guidelines](https://hello.vrchat.com/community-guidelines). I will not be held responsible for any bans that might occur, use at your own risk.
-
-## Statement
-
-- I am a professional and highly trusted developer that takes privacy and security very seriously. The software development kit does not contain anything malicious. I will never log any personal or sensitive information, at risk of tarnishing my reputation and credibility. I will never attack or harm any user, over any reason, for whatever purpose, please rest assured.
-- I am an individual working on the software development kit all by myself, thousands of hours have gone into the project ever since the first release, constantly updating and adding features.
-
 ## Important
 
 - SDK2 is now deprecated and will stop getting updates, when that happens, further support will seize to exist.
@@ -82,11 +73,11 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 ## Version
 
-- 14.2
+- 2.15.0
 
 ## Date
 
-- 2021.11.11.13.29
+- 2021.12.24.21.26
 
 ## Information
 
