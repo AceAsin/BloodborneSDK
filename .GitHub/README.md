@@ -82,8 +82,6 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 ## Information
 
 - Modification
-  - Anti Rip
-  - ~~Anti Yoink~~
   - Auto Fill Visemes
   - Auto Fix Issues
   - Auto Remove Scripts
