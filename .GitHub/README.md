@@ -73,7 +73,7 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 ## Version
 
-- 2.15.0
+- 2.16.0
 
 ## Date
 
