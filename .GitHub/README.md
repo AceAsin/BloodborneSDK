@@ -34,7 +34,9 @@
 
 ## Support
 
-- You can support me by creating a free account, following me on [GitHub][GitHub] and starring my repositories. If you wish to donate, then please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi]. If you however would like to receive early access and exclusive content, then consider becoming a patron, over at [Patreon][Patreon].
+- You can support me by creating a free account, following me on [GitHub][GitHub] and starring my repositories.
+- If you wish to donate, then please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi]. In return for donating, you will receive a lifetime donator role in the server.
+- If you however would like to receive early access and exclusive content, then consider becoming a patron, over at [Patreon][Patreon].
 
 ## Important
 
@@ -62,7 +64,7 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 ## Unity
 
-- 2019.4.31f1
+- [2019.4.31f1](https://docs.vrchat.com/docs/current-unity-version)
 
 ## Build
 
@@ -73,11 +75,11 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 ## Version
 
-- 2.19.0
+- 2.20.0
 
 ## Date
 
-- 2022.04.23.21.06
+- 2022.06.20.05.50
 
 ## Information
 
