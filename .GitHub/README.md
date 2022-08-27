@@ -14,7 +14,7 @@
 
 <div align='center'>
     <a href='https://discord.gg/AceAsin'>
-        <img alt='Discord' src='https://img.shields.io/discord/492294696912158720?color=5865F2&logoColor=FFFFFF&label=Λ%20C%20Ξ%20Λ%20S%20I%20N&logo=Discord&style=for-the-badge' />
+        <img alt='Discord' src='https://img.shields.io/discord/492294696912158720?color=5865F2&logoColor=FFFFFF&label=%CE%9B%20C%20%CE%9E%20%CE%9B%20S%20I%20N&logo=Discord&style=for-the-badge' />
     </a>
     <a href='https://patreon.com/AceAsin' title='Patreon'>
         <img alt='Patreon' src='https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.patreon.com%2Fapi%2Fcampaigns%2F1839759&query=data.attributes.patron_count&suffix=%20Patrons&color=FF5441&label=Patreon&logo=Patreon&logoColor=FFFFFF&style=for-the-badge' />
