@@ -1,8 +1,9 @@
-**06/20/2022**
+**Ace Asin — 06/30/2022**
 
-- The max amount of expression controls and parameters have been set to the max value of a 32 bit integer, which happens to be 2147483647. This doesn't particularly mean that they'll function in-game when going past 8 controls and 256 parameters. They work on an emulator just fine, but higher values are in fact inaccessible through the in-game menu, unless you somehow figure out how to access them or get them to work through modifications.
+- Forgot to make an important change on the last release for the max upload limit on Quest avatars. It has been settled and premium users will once again be able to upload avatars larger than 10 MB when on Quest. Please note that if you upload an avatar above 10 MB then it will be considered local, other users will have to clone it if they want to see it themselves.
 
-**06/20/2022**
+**Ace Asin — 06/30/2022**
 
-- Removed unnecessary logs from the License component. This caused an integer and boolean to appear on your console when the End User License Agreement (EULA) was initialized on load.
-- Removed more unnecessary logs from the Quest component. It would previously show the size of the avatar on your console when uploading.
+- Av3 Emulator will once again work with the latest release, users will no longer be presented with console errors, due to not containing newer definitions.
+
+- Av3 Emulator GM and Av3 Emulator Lite in the assets have both been removed in exchange for the latest Av3 Emulator.

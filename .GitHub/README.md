@@ -1,7 +1,7 @@
 # **Bloodborne**
 
 [GitHub]: https://github.com/AceAsin
-[Discord]: https://discord.gg/U8vHS7y
+[Discord]: https://discord.gg/AceAsin
 [Patreon]: https://patreon.com/AceAsin
 [BuyMeACoffee]: https://buymeacoffee.com/aceasin
 [Ko-Fi]: https://ko-fi.com/aceasin
@@ -13,8 +13,8 @@
 </div>
 
 <div align='center'>
-    <a href='https://discord.gg/U8vHS7y'>
-        <img alt='Discord' src='https://img.shields.io/discord/492294696912158720?color=5865F2&logoColor=FFFFFF&label=%CE%9BCE%20%CE%9BSIN%E2%84%A2&logo=Discord&style=for-the-badge' />
+    <a href='https://discord.gg/AceAsin'>
+        <img alt='Discord' src='https://img.shields.io/discord/492294696912158720?color=5865F2&logoColor=FFFFFF&label=Λ%20C%20Ξ%20Λ%20S%20I%20N&logo=Discord&style=for-the-badge' />
     </a>
     <a href='https://patreon.com/AceAsin' title='Patreon'>
         <img alt='Patreon' src='https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.patreon.com%2Fapi%2Fcampaigns%2F1839759&query=data.attributes.patron_count&suffix=%20Patrons&color=FF5441&label=Patreon&logo=Patreon&logoColor=FFFFFF&style=for-the-badge' />
@@ -75,11 +75,11 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 ## Version
 
-- 2.20.0
+- 2.21.0
 
 ## Date
 
-- 2022.06.20.05.50
+- 2022.06.30.06.09
 
 ## Information
 
