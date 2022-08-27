@@ -75,11 +75,11 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 ## Version
 
-- 2.21.0
+- 2.22.0
 
 ## Date
 
-- 2022.06.30.06.09
+- 2022.08.26.18.41
 
 ## Information
 
@@ -110,6 +110,8 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
   - Avatar Thumbnail
   - Avatar Performance
   - Client Path
+  - Quest Avatar Limiter
+  - Quest World Limiter
   - Rich Presence
   - Upload Panel
   - User Interface
@@ -121,6 +123,7 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
   - Domain Name System
   - Internet Protocol
   - Inter Process Communication
+  - JSON Web Token
   - Remote Configuration
   - Remote Procedure Call
   - Representational State Transfer
