@@ -75,11 +75,11 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 ## Version
 
-- 2.22.0
+- 2.22.1
 
 ## Date
 
-- 2022.08.26.18.41
+- 2022.09.30.14.01
 
 ## Information
 
