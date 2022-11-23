@@ -75,11 +75,11 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 ## Version
 
-- 2.22.1
+- 2.23.0
 
 ## Date
 
-- 2022.09.30.14.01
+- 2022.11.09.14.43
 
 ## Information
 
@@ -103,6 +103,7 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
   - Polygon Limiter
   - Shader Limiter
   - Station Limiter
+  - Upload Limiter
 
 - Custom
   - Artwork Banner
