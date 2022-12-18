@@ -29,38 +29,24 @@
 
 ## Download
 
-- The download can be found on the server, [Λ C Ξ Λ S I N][Discord]. There's also more information on the server, so come stop by and say hello.
-- If you want to share the package, then please redirect people to the official discord server, so that they may download the package from the respected source.
+- The software download can be found on the server [Λ C Ξ Λ S I N][Discord]. There's also more information on there. Join the server if you require any assistance. We are more than happy to help.
+- If you want to share the software package, then please redirect users to the official server so that they may download the package from the respected source.
+- Do not download stolen or cracked versions of the software from nefarious users that have malicious intent. This will only put you at risk of getting your computer compromised and information stolen.
 
 ## Support
 
-- You can support me by creating a free account, following me on [GitHub][GitHub] and starring my repositories.
-- If you wish to donate, then please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi]. In return for donating, you will receive a lifetime donator role in the server.
-- If you however would like to receive early access and exclusive content, then consider becoming a patron, over at [Patreon][Patreon].
+- You can support me by creating a free account, following me on [GitHub][GitHub], and starring my repositories.
+- If you wish to donate, then please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi]. In return for donating, you will receive a cyan-colored lifetime donator role in the server that distinguishes you from others.
+- If you would like to receive early access and exclusive content, then consider becoming a patron by visiting my [Patreon][Patreon] page.
+
+## Privacy
+
+- The software stores and accesses preferences by using [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) and [EditorPrefs](https://docs.unity3d.com/ScriptReference/EditorPrefs.html).
+- The software only performs [**HTTP** `GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method requests to obtain data from the backend server.
 
 ## Important
 
-- SDK2 is now deprecated and will stop getting updates, when that happens, further support will seize to exist.
-
-## System
-
-### Windows
-
-```sh
-Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
-```
-
-### macOS
-
-```sh
-~/Library/Preferences/com.unity3d.UnityEditor5.x.plist
-```
-
-### Linux
-
-```sh
-~/.local/share/unity3d/prefs
-```
+- SDK2 is now deprecated and has since stopped getting updates.
 
 ## Unity
 
@@ -75,11 +61,11 @@ Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x
 
 ## Version
 
-- 2.23.0
+- 2.24.0
 
 ## Date
 
-- 2022.11.09.14.43
+- 2022.12.13.11.48
 
 ## Information
 

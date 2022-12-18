@@ -1,38 +1,45 @@
-Ace Asin — 09/30/2022
+Ace Asin — 12/06/2022
 
-Changed special features that server boosters, premium members, and patrons receive.
+Fixed a bug that prevented more than 2 preset accounts from being selected for patrons.
 
-Ace Asin — 09/30/2022
+Improved the preset dropdown menu behavior. If you are unauthorized, then instead of the last preset account staying the same, it will now set the preset account to none.
 
-Made changes to the Unity Extension hover text to better describe what the toggle does.
+Ace Asin — 12/06/2022
 
-Ace Asin — 09/30/2022
+Changed the visibility icons for settings from off and on to minus and plus.
 
-Fixed users not being able to upload past 10 MB on version 2.22.0. Simply forgot to make an important change for the bypass. The mistake was only made on version 2.22.0, older releases and newer releases will work fine.
+Ace Asin — 12/06/2022
 
-Ace Asin — 10/11/2022
+Made minor improvements to the Asset Bundle Loader.
 
-Made improvements to the Quest upload limiter state behavior. It will now display the correct upload limiter toggle depending on the user's permissions. It will also display the correct text on the builder, depending on if permissions have changed for the current user.
+Ace Asin — 12/06/2022
 
-The same state behavior improvements have been implemented for Discord RPC toggles, highly optimized and without having to create more preferences.
+Fixed a bug that displayed the wrong hover text for the Discord component on the settings.
 
-Ace Asin — 10/11/2022
+Ace Asin — 12/06/2022
 
-Added the ability to show or hide settings due to their increase. There will now be a toggle visibility icon, clicking it will either expand or collapse the entire section. This will greatly improve performance when settings are collapsed since they won't be loaded. EditorPrefs are in use, more preferences had to be created so that the states are saved through different projects.
+Changed the accessibility of some dropdown menus. The dropdown menus for both the Discord and Quest components will now be disabled when unauthorized. They will only be enabled when authorized.
 
-Ace Asin — 10/11/2022
+Ace Asin — 12/07/2022
 
-Changed the order of some settings.
+Improved the overall behavior of your rich presence. The behavior on the buttons is better, they will be enabled or disabled depending on what you type. You must be connected to Discord RPC and authorized as a server booster, premium member, or patron if you want to change your custom rich presence.
 
-Ace Asin — 11/02/2022
+Ace Asin — 12/10/2022
 
-Made changes to the auto-updater. The startup toggle was renamed from Auto Updater to Auto Update. The menu functions to run them have been removed. They are now located on the settings all the way down, where you'll be presented with a new cloud icon. The cloud icon will check for updates when clicked. If you are unable to click the cloud icon, then it means you're up-to-date.
+Patched the original Assets > Export Package... method so that it supports UPM. It's not really needed at the moment, but in the future, it will help creators export their avatars with Bloodborne SDK when it's moved to the Packages folder. It is a built-in feature so it will only work when using Bloodborne SDK.
 
-Ace Asin — 11/02/2022
+I worked hard on this Unity patch because I know that some creators would like to include an SDK when distributing avatars to Gumroad, Payhip, Booth, etc... I remember seeing a post about creators not being able to include an SDK with their avatars. I hope that this patch lays those concerns to rest.
 
-Made changes to the preset accounts, regular users can preset 1 account, server boosters, and premium members are able to preset 2 accounts. If you want to preset an unlimited amount of accounts, then you must become a patron.
+It's worth noting that you'll have to select the main folders from the left side of your Project tab to be able to export from both Assets and Packages at the same time.
 
-Ace Asin — 11/09/2022
+Ace Asin — 12/11/2022
 
-Removed the Bloodborne > Discord sub-menu.
-Added 1 entry to both Bloodborne > Social and Bloodborne > Support sub-menus.
+Fixed a bug that prevented Discord RPC from auto-reconnecting after getting disconnected. In the past, after making some changes, the delay couldn't get the integer. It had to be called from the main thread.
+
+Ace Asin — 12/11/2022
+
+Commented out a debug line that message logged content that was deleted since it seemed to spam it.
+
+Ace Asin — 12/18/2022
+
+Updated obtained information from the backend server. Added Gesture Manager to the Asset tab. This was a remote update, and no changes are required.
