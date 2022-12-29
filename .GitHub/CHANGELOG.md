@@ -57,3 +57,7 @@ Ace Asin — 12/23/2022
 Ace Asin — 12/23/2022
 
 - Removed the Quest component from the SDK3 - World since it's not needed.
+
+Ace Asin — 12/28/2022
+
+- Bypassed the parameters limit once again since it seemed to be working fine. I had previously left the safe limits intact after reports of not being able to get them to work.
