@@ -31,7 +31,7 @@
 
 - The software download can be found on the server [Λ C Ξ Λ S I N][Discord]. There's also more information on there. Join the server if you require any assistance. We are more than happy to help.
 - If you want to share the software package, then please redirect users to the official server so that they may download the package from the respected source.
-- Do not download stolen or cracked versions of the software from nefarious users that have malicious intent. This will only put you at risk of getting your computer compromised and information stolen.
+- Do not download stolen and cracked versions of the software from nefarious users that have malicious intent. This will only put you at risk of getting your computer compromised and information stolen.
 
 ## Support
 
@@ -61,7 +61,7 @@
 
 ## Version
 
-- 2.24.0
+- 2.25.0
 
 ## Date
 
@@ -79,6 +79,8 @@
   - Bypass Limiters
   - Performance Improvements
   - Shortcut Hotkeys
+  - Unlimited Controls
+  - Unlimited Parameters
 
 - Bypass
   - Audio Limiter
@@ -96,9 +98,8 @@
   - Asset Path
   - Avatar Thumbnail
   - Avatar Performance
+  - Avatar Size
   - Client Path
-  - Quest Avatar Limiter
-  - Quest World Limiter
   - Rich Presence
   - Upload Panel
   - User Interface
@@ -160,21 +161,21 @@
 
 ## Variable
 
-- `{Build}` - The current build for Bloodborne SDK.
-- `{Version}` - The current version for Bloodborne SDK.
-- `{Date}` - The current date for Bloodborne SDK.
-- `{Avatar}` - The current avatar on the pipeline manager.
-- `{World}` - The current world on the pipeline manager.
-- `{Project}` - The project name for Discord Rich Presence.
-- `{Scene}`- The scene name for Discord Rich Presence.
-- `{Play}` - The play state event for Discord Rich Presence.
+- `{Build}` - The current Bloodborne build.
+- `{Version}` - The current Bloodborne version.
+- `{Date}` - The current Bloodborne date.
+- `{Avatar}` - The current Pipeline Manager avatar.
+- `{World}` - The current Pipeline Manager world.
+- `{Project}` - The current Unity project name.
+- `{Scene}`- The current Unity scene name.
+- `{Play}` - The current Unity play state event.
   - Building
   - Compiling
   - Editing
   - Playing
   - Testing
   - Updating
-- `{Pause}` - The pause state event for Discord Rich Presence. Enter in the custom text field, on the settings tab.
+- `{Pause}` - The current Unity pause state event.
   - Paused
   - Unpaused
 
