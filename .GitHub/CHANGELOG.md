@@ -61,3 +61,7 @@ Ace Asin — 12/23/2022
 Ace Asin — 12/28/2022
 
 - Bypassed the parameters limit once again since it seemed to be working fine. I had previously left the safe limits intact after reports of not being able to get them to work.
+
+Ace Asin — 12/31/2022
+
+- Fixed a bug that was trying to reference a method that didn't exist anymore after making internal changes. It was only present when targeting Android on SDK3 - World.
