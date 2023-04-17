@@ -31,7 +31,7 @@
 
 - The software download can be found on the server [Λ C Ξ Λ S I N][Discord]. There's also more information on there. Join the server if you require any assistance. We are more than happy to help.
 - If you want to share the software package, then please redirect users to the official server so that they may download the package from the respected source.
-- Do not download cracked versions of the software from nefarious users that have malicious intent. This will only put you at risk of getting your computer compromised and information stolen.
+- Do not download cracked versions of the software from nefarious users. This will only put you at risk of getting your computer compromised and information stolen.
 
 ## Support
 
