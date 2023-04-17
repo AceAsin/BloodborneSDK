@@ -46,7 +46,8 @@
 
 ## Important
 
-- SDK2 is now deprecated and has since stopped getting updates.
+- The software now resides in **Packages** instead of **Assets** in the form of a custom package.
+- The software is capable of exporting from **Packages** and **Assets** since the original **Assets > Export Package...** method was patched.
 
 ## Unity
 
@@ -61,11 +62,7 @@
 
 ## Version
 
-- 2.25.2
-
-## Date
-
-- 2022.12.23.23.53
+- 3.0.0
 
 ## Information
 
@@ -142,10 +139,15 @@
   - Bloodborne.dll
 
 - Plugin
+  - 0Harmony.dll
   - DiscordRPC.dll
+  - NativeNamedPipe.bundle
   - NativeNamedPipe.dll
-  - Newtonsoft.Json.dll
+  - NativeNamedPipe.so
   - UnityNamedPipe.dll
+
+- Unity
+  - Unity.InternalAPIEditorBridge.011.dll
 
 - Script
   - Bloodborne Asset Bundle
@@ -163,7 +165,6 @@
 
 - `{Build}` - The current Bloodborne build.
 - `{Version}` - The current Bloodborne version.
-- `{Date}` - The current Bloodborne date.
 - `{Avatar}` - The current Pipeline Manager avatar.
 - `{World}` - The current Pipeline Manager world.
 - `{Project}` - The current Unity project name.

@@ -1,67 +1,79 @@
-Ace Asin — 12/06/2022
+Ace Asin — 04/04/2023
 
-- Fixed a bug that prevented more than 2 preset accounts from being selected for patrons.
+- Created a custom Bloodborne package in the Packages folder. This is where Bloodborne version 3.0.0 will reside moving forward. The legacy residence was the Assets folder.
 
-- Improved the preset dropdown menu behavior. If you are unauthorized, then instead of the last preset account staying the same, it will now set the preset account to none.
+- Added Bloodborne references to VRC asmdef editor files.
 
-Ace Asin — 12/06/2022
+Ace Asin — 04/04/2023
 
-- Changed the visibility icons for settings from off and on to minus and plus.
+- Added the same com.unity.nuget.newtonsoft-json dependency version that the VRChat base package uses to Bloodborne. This will prevent any strong named errors that some encountered in the past.
 
-Ace Asin — 12/06/2022
+Ace Asin — 04/11/2023
 
-- Made minor improvements to the Asset Bundle Loader.
+- Optimized the content manager for your avatars and worlds by removing unnecessary code.
 
-Ace Asin — 12/06/2022
+- Improved the auto-updater. It will now check the version instead of the date. It previously caused issues when I made minor patch updates since I don't have to update the date on the library.
 
-- Fixed a bug that displayed the wrong hover text for the Discord component on the settings.
+- Changed the description of the prompt windows.
 
-Ace Asin — 12/06/2022
+Ace Asin — 04/11/2023
 
-- Changed the accessibility of some dropdown menus. The dropdown menus for both the Discord and Quest components will now be disabled when unauthorized. They will only be enabled when authorized.
+- Optimized the code for Discord RPC.
 
-Ace Asin — 12/07/2022
+- Fixed a bug that caused the Discord RPC auto-reconnect retry amount to reset every time the control panel was focused.
 
-- Improved the overall behavior of your rich presence. The behavior on the buttons is better, they will be enabled or disabled depending on what you type. You must be connected to Discord RPC and authorized as a server booster, premium member, or patron if you want to change your custom rich presence.
+- Fixed a bug that attempted to auto-reconnect the previously failed pipe when you switched pipes and connected to another. This bug only occurred when connecting to different clients very rapidly during the time it waits to attempt another auto-reconnect. It caused an auto-reconnect loop for the new client, even after it was already connected.
 
-Ace Asin — 12/10/2022
+- Changed the number of retries to 20 every 15 seconds for a total duration of 5 minutes. This is especially low and will likely not cause a stack overflow crash error.
 
-- Patched the original Assets > Export Package... method so that it supports UPM. It's not really needed at the moment, but in the future, it will help creators export their avatars with Bloodborne SDK when it's moved to the Packages folder. It is a built-in feature so it will only work when using Bloodborne SDK.
+- Improved the behavior of auto-reconnect. If rich presence is disabled, it will stop trying to auto-reconnect instantly. If a client is successfully connected, it will reset the number of auto-reconnect retries and attempt to auto-reconnect once again until its capacity is reached. It will also reset the number of auto-reconnect retries if any manual connection is attempted.
 
-- I worked hard on this Unity patch because I know that some creators would like to include an SDK when distributing avatars to Gumroad, Payhip, Booth, etc... I remember seeing a post about creators not being able to include an SDK with their avatars. I hope that this patch lays those concerns to rest.
+- These changes were put in place to prevent and stop the stack overflow crash error caused by auto-reconnect.
 
-- It's worth noting that you'll have to select the main folders from the left side of your Project tab to be able to export from both Assets and Packages at the same time.
+Ace Asin — 04/12/2023
 
-Ace Asin — 12/11/2022
+- Improved and optimized the placeholder text for all fields. The placeholder text will automatically be removed as soon as you begin typing. Although the placeholder text was automatically highlighted, there's no more need to clear the placeholder text before typing.
 
-- Fixed a bug that prevented Discord RPC from auto-reconnecting after getting disconnected. In the past, after making some changes, the delay couldn't get the integer. It had to be called from the main thread.
+- Noticed that it was kind of scuffed on certain fields, but it's not a big issue. I don't have the time to make it better at the moment, so it'll have to wait for a future update.
 
-Ace Asin — 12/11/2022
+Ace Asin — 04/12/2023
 
-- Commented out a debug line that message logged content that was deleted since it seemed to spam it.
+- Added Discord RPC support for Linux and macOS, hopefully, they work fine. Unable to test Linux, but it should work fine, and macOS seems to run into problems after a while. I had to build a NativeNamedPipe.so and NativeNamedPipe.bundle artifact.
 
-Ace Asin — 12/18/2022
+Ace Asin — 04/13/2023
 
-- Updated obtained information from the backend server. Added Gesture Manager to the Asset tab. This was a remote update, and no changes are required.
+- Patched the original Assets > Export Package... method, and it now supports UPM. It allows creators to export their avatars with Bloodborne included. You'll have to select the main folders from the left side of your Project tab. This will allow you to export from both Assets and Packages.
 
-Ace Asin — 12/23/2022
+Ace Asin — 04/13/2023
 
-- Added the Reload SDK menu option back but moved it inside Utility.
+- Made changes to the remote version file, so expect some things to stop functioning.
 
-Ace Asin — 12/23/2022
+Ace Asin — 04/13/2023
 
-- Fixed Discord RPC (Connection Failed) bug that was causing a stack overflow.
+- Removed a lot of SDK2 code that wasn't used anymore since it's no longer supported.
 
-- Removed the retry interval dropdown menu. Discord RPC will attempt to auto reconnect at an interval of 15000 milliseconds as usual, but only for a couple of tries. If it fails to reconnect after a few attempts, then it will stop in order to avoid a stack overflow on users who don’t have a Discord application opened. This process will reset when a successful connection is established or after each compilation.
+- Removed the date from Bloodborne and VRChat at the bottom of the settings.
 
-Ace Asin — 12/23/2022
+- Renamed SDK3A to Avatar and SDK3W to World at the bottom of the settings.
 
-- Removed the Quest component from the SDK3 - World since it's not needed.
+- The definitions SDK3A and SDK3W will still be used on the title of the packages, auto-update prompt windows, and rich presences.
 
-Ace Asin — 12/28/2022
+Ace Asin — 04/13/2023
 
-- Bypassed the parameters limit once again since it seemed to be working fine. I had previously left the safe limits intact after reports of not being able to get them to work.
+- Fixed a small GUI alignment issue on the builder for SDK3W. Forgot to remove a section of VRChat's unaligned code. It had gone unnoticed for 3 releases.
 
-Ace Asin — 12/31/2022
+Ace Asin — 04/13/2023
 
-- Fixed a bug that was trying to reference a method that didn't exist anymore after making internal changes. It was only present when targeting Android on SDK3 - World.
+- Hid the warning that tells you that a world is too large to upload. It will only display the warning after attempting to build a large world, and it's gotten its size.
+
+Ace Asin — 04/13/2023
+
+- Removed the developer and secure bool from the Setting.json file. Decided to make these internal instead, and it looks much cleaner. They were only there for development purposes in the early stages.
+
+Ace Asin — 04/13/2023
+
+- Fixed an issue that wasn't properly setting a banner for the splash screen and control panel when detecting changes on the scriptable object.
+
+Ace Asin — 04/13/2023
+
+- Added a new method that will get the year on the signature that is located at the bottom according to your system date.
