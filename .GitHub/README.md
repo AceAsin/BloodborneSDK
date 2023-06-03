@@ -62,22 +62,25 @@
 
 ## Version
 
-- 3.0.0
+- 3.1.0
 
 ## Information
 
 - Modification
+  - Asset Bundle
   - Auto Fill Visemes
   - Auto Fix Issues
   - Auto Remove Scripts
   - Auto Remove Shaders
   - Auto Updater
   - Bug Fixes
-  - Bypass Limiters
+  - Bypass PC Limiters
+  - Bypass Quest Limiters
   - Performance Improvements
+  - Preset Accounts
   - Shortcut Hotkeys
-  - Unlimited Controls
-  - Unlimited Parameters
+  - ~~Unlimited Controls~~
+  - ~~Unlimited Parameters~~
 
 - Bypass
   - Audio Limiter
@@ -86,6 +89,7 @@
   - Mesh Limiter
   - Particle Limiter
   - Polygon Limiter
+  - Quest Limiter
   - Shader Limiter
   - Station Limiter
   - Upload Limiter
@@ -94,14 +98,13 @@
   - Artwork Banner
   - Asset Path
   - Avatar Thumbnail
-  - Avatar Performance
   - Avatar Size
   - Client Path
   - Rich Presence
   - Upload Panel
   - User Interface
 
-- Implementation
+- Technology
   - Application Programming Interface
   - Content Delivery Network
   - Discord Rich Presence
@@ -114,52 +117,88 @@
   - Representational State Transfer
   - Unique Device Identification
 
-- Generator
-  - HWID
-  - GUID
-  - UUID
+- Asset
+  - Public
+  - Private
 
 - Bundle
   - Avatar Prefab
   - World Scene
 
-- Theme
-  - Dark
-  - Light
-
-- Support
-  - Android
-  - Windows
+- Generator
+  - HWID
+  - GUID
+  - UUID
 
 - Preference
   - EditorPrefs
   - PlayerPrefs
 
-- Library
-  - Bloodborne.dll
-
-- Plugin
-  - 0Harmony.dll
-  - DiscordRPC.dll
-  - NativeNamedPipe.bundle
-  - NativeNamedPipe.dll
-  - NativeNamedPipe.so
-  - UnityNamedPipe.dll
-
-- Unity
-  - Unity.InternalAPIEditorBridge.011.dll
-
 - Script
-  - Bloodborne Asset Bundle
   - Bloodborne Background
   - Bloodborne Thumbnail
-
-- Shader
-  - Thumbnail
 
 - Server
   - Authentication
   - Authorization
+
+- Support
+  - Android
+  - Windows
+
+- Theme
+  - Dark
+  - Light
+
+## Package
+
+- Asset
+  - Image
+    - Background.png
+    - Banner.png
+  - Material
+    - Template.mat
+  - Shader
+    - Colorize.shader
+    - Thumbnail.shader
+- Cache
+  - Setting.asset
+- Discord
+  - Editor
+    - CharacterLimitAttributeDrawer.cs
+    - DiscordAssetDrawer.cs
+    - DiscordEventDrawer.cs
+    - DiscordPartyDrawer.cs
+    - DiscordSecretsDrawer.cs
+    - DiscordTimestampDrawer.cs
+    - DiscordUserDrawer.cs
+    - NativeDllHandler.cs
+  - Script
+    - Atrribute
+      - CharacterLimitAttribute.cs
+    - Control
+      - DiscordEvents.cs
+      - UnityLogger.cs
+    - Presence
+      - DiscordAssets.cs
+      - DiscordAvatar.cs
+      - DiscordEvent.cs
+      - DiscordParty.cs
+      - DiscordPresence.cs
+      - DiscordSecrets.cs
+      - DiscordTimestamps.cs
+      - DiscordUser.cs
+- Library
+  - Bloodborne.dll
+- Plugin
+  - 0Harmony.dll
+  - DiscordRPC.dll
+  - ~~NativeNamedPipe.bundle~~
+  - NativeNamedPipe.dll
+  - NativeNamedPipe.so
+  - UnityNamedPipe.dll
+- Unity
+  - Unity.InternalAPIEditorBridge.011.dll
 
 ## Variable
 
@@ -184,9 +223,12 @@
 
 - `ALT + C` - Clear Console
 - `ALT + D` - Delete Cache
-- `ALT + LEFT MB` - Expand/Collapse List
-- `ALT + RIGHT MB` - Expand/Collapse List
-- `ALT + MIDDLE MB` - Expand/Collapse List
+- `ALT + T` - Toggle Scrollbar
+- `ALT + A` - Collapse/Expand Setting
+- `ALT + W` - Center Window
+- `ALT + R` - Reset Setting
+- `ALT + E` - Export Package (Developer Only)
+- `ALT + O` - Overwrite Prefab (Developer Only)
 
 ## Markdown
 

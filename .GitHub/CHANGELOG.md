@@ -1,79 +1,183 @@
-Ace Asin — 04/04/2023
+Ace Asin — 05/04/2023
 
-- Created a custom Bloodborne package in the Packages folder. This is where Bloodborne version 3.0.0 will reside moving forward. The legacy residence was the Assets folder.
+- Removed the NativeNamedPipe.bundle artifact for macOS since further development is still required.
 
-- Added Bloodborne references to VRC asmdef editor files.
+Ace Asin — 05/05/2023
 
-Ace Asin — 04/04/2023
+- Added a visibility toggle icon on the password field that allows users to show or hide their password.
 
-- Added the same com.unity.nuget.newtonsoft-json dependency version that the VRChat base package uses to Bloodborne. This will prevent any strong named errors that some encountered in the past.
+Ace Asin — 05/05/2023
 
-Ace Asin — 04/11/2023
+- Added a CapsLock notification below the account window that notifies users  when CapsLock is turned on or off, only works for Windows at the moment.
 
-- Optimized the content manager for your avatars and worlds by removing unnecessary code.
+Ace Asin — 05/05/2023
 
-- Improved the auto-updater. It will now check the version instead of the date. It previously caused issues when I made minor patch updates since I don't have to update the date on the library.
+- Removed the function line that has an update/save and remove button on the account window.
 
-- Changed the description of the prompt windows.
+- Added  a save icon on the username field that allows users to save and update their preset accounts.
 
-Ace Asin — 04/11/2023
+- Added a dialog window with options to create/cancel or update/delete/cancel.
 
-- Optimized the code for Discord RPC.
+- Added hover tooltip text to both of the save and visibility toggle icons.
 
-- Fixed a bug that caused the Discord RPC auto-reconnect retry amount to reset every time the control panel was focused.
+Ace Asin — 05/06/2023
 
-- Fixed a bug that attempted to auto-reconnect the previously failed pipe when you switched pipes and connected to another. This bug only occurred when connecting to different clients very rapidly during the time it waits to attempt another auto-reconnect. It caused an auto-reconnect loop for the new client, even after it was already connected.
+- Removed the component section on the settings since it doesn't serve a point anymore.
 
-- Changed the number of retries to 20 every 15 seconds for a total duration of 5 minutes. This is especially low and will likely not cause a stack overflow crash error.
+Ace Asin — 05/06/2023
 
-- Improved the behavior of auto-reconnect. If rich presence is disabled, it will stop trying to auto-reconnect instantly. If a client is successfully connected, it will reset the number of auto-reconnect retries and attempt to auto-reconnect once again until its capacity is reached. It will also reset the number of auto-reconnect retries if any manual connection is attempted.
+- Removed the BloodborneAssetBundle script since you can just do the same thing through the settings.
 
-- These changes were put in place to prevent and stop the stack overflow crash error caused by auto-reconnect.
+Ace Asin — 05/06/2023
 
-Ace Asin — 04/12/2023
+- Fixed a bug that caused the custom image or video to not display on the upload panel.
 
-- Improved and optimized the placeholder text for all fields. The placeholder text will automatically be removed as soon as you begin typing. Although the placeholder text was automatically highlighted, there's no more need to clear the placeholder text before typing.
+- Fixed a bug that caused the custom video to not use the volume slider from the settings on the upload panel.
 
-- Noticed that it was kind of scuffed on certain fields, but it's not a big issue. I don't have the time to make it better at the moment, so it'll have to wait for a future update.
+- Made changes and improvements to the BloodborneBackground script.
 
-Ace Asin — 04/12/2023
+- Made changes and improvements to internal methods that allow me to modify the VRCSDKAvatar, VRCSDKWorld, and VRCCam prefabs completely. This workflow saves a lot of time by not having to manually modify the prefabs for production.
 
-- Added Discord RPC support for Linux and macOS, hopefully, they work fine. Unable to test Linux, but it should work fine, and macOS seems to run into problems after a while. I had to build a NativeNamedPipe.so and NativeNamedPipe.bundle artifact.
+Ace Asin — 05/07/2023
 
-Ace Asin — 04/13/2023
+- Made changes and improvements to the early access auth window. The window is only present on early releases to deny access to unauthorized users.
 
-- Patched the original Assets > Export Package... method, and it now supports UPM. It allows creators to export their avatars with Bloodborne included. You'll have to select the main folders from the left side of your Project tab. This will allow you to export from both Assets and Packages.
+- Added social buttons on top of the early access auth window that are the same as the ones found on the splash screen.
 
-Ace Asin — 04/13/2023
+- Removed early access through the client. This was the old method that granted access through DIscord RPC client pipes. It will still remain present as an alternative method of authorization on official releases, but it will soon be deprecated in the future.
 
-- Made changes to the remote version file, so expect some things to stop functioning.
+- Added early access through the server. This is the new method that grants access with the utilization of the JSON Web Token system.
 
-Ace Asin — 04/13/2023
+- Added a lock icon instead of text for the auth window button that grants access.
 
-- Removed a lot of SDK2 code that wasn't used anymore since it's no longer supported.
+- Removed early access internal code related to testers as they have no longer been needed since deprecated.
 
-- Removed the date from Bloodborne and VRChat at the bottom of the settings.
+Ace Asin — 05/07/2023
 
-- Renamed SDK3A to Avatar and SDK3W to World at the bottom of the settings.
+- Optimized the enter/return keypress detection on the account window that's used to login.
 
-- The definitions SDK3A and SDK3W will still be used on the title of the packages, auto-update prompt windows, and rich presences.
+- Added the enter/return keypress detection to the auth window that displays on early releases.
 
-Ace Asin — 04/13/2023
+Ace Asin — 05/07/2023
 
-- Fixed a small GUI alignment issue on the builder for SDK3W. Forgot to remove a section of VRChat's unaligned code. It had gone unnoticed for 3 releases.
+- Made slight changes to the control panel window width. The option toolbar was offset by a bit using the default width.
 
-Ace Asin — 04/13/2023
+- Fixed an alignment issue on the account window.
 
-- Hid the warning that tells you that a world is too large to upload. It will only display the warning after attempting to build a large world, and it's gotten its size.
+Ace Asin — 05/07/2023
 
-Ace Asin — 04/13/2023
+- Added a shortcut that will center the control panel window when pressed. It will be included on the GitHub README.
 
-- Removed the developer and secure bool from the Setting.json file. Decided to make these internal instead, and it looks much cleaner. They were only there for development purposes in the early stages.
+Ace Asin — 05/08/2023
 
-Ace Asin — 04/13/2023
+- Improved the behavior of the remember me toggle. It would only remember the last typed credentials after a successful login. It will now remember the last typed credentials without having to login. These are remembered per session so they won't be remembered after restarting the editor. This is useful after compiling so that it doesn't clear your credentials. It can get quite annoying having to type your credentials every time you compile.
 
-- Fixed an issue that wasn't properly setting a banner for the splash screen and control panel when detecting changes on the scriptable object.
+Ace Asin — 05/08/2023
 
-Ace Asin — 04/13/2023
+- Redesigned the 2FA window, lots of changes and improvements.
 
-- Added a new method that will get the year on the signature that is located at the bottom according to your system date.
+- Removed the help button and description.
+
+- Moved the verify button to where the help button was previously located.
+
+- Added a waiting/loading icon when attempting to login and animated it.
+
+- Added the ability to login by key pressing enter/return. It was already implemented on the main window, but not the secondary 2FA window. I hated not being able to verify the code with enter/return.
+
+- Added a user label and field for the user that's trying to be authenticated.
+
+- Added a code label and field for users to type in their app or email code.
+
+- Added a help icon button on the right side of the code label. It will display a dialog window with an app or email description, along with button options to cancel and link you to the help docs. Hovering over the help icon button will tell you if it's looking for an app or email code in case you don't want to click the button and display the dialog window.
+
+- Added a notification that will display below the window for a short duration if the code entered is valid or invalid.
+
+- Improved the cancel button. It will clear the code if you press the cancel button and go back.
+
+- Improved behavior of the verify button. It will be disabled if an invalid code is entered or when the code is successfully verified.
+
+- Improved behavior of the code field. It will be marked red if an invalid code is entered. It only accepts numbers and they must be 6 digits in length, with the exception of spaces and dashes in the middle, empty spaces at the beginning or end will get trimmed.
+
+- The code text field will be disabled, along with the help button on the right side when it's checking that the code is valid.
+
+Ace Asin — 05/09/2023
+
+- Fixed the width behavior for assets, and made the dropdown menus 50% width at all times, even with responsive window toggled. They were taking up almost 75% of the entire width before.
+
+- Fixed the behavior of the client and asset sections. The width for the path and server labels are now 50%.
+
+- Fixed the behavior of certain elements so that they don't seem glitchy when resizing while the responsive window is toggled.
+
+Ace Asin — 05/10/2023
+
+- Fixed a bug that caused the clear user data warning to show after creating/updating a preset account and resetting the cache.
+
+Ace Asin — 05/10/2023
+
+- Added the ability to dynamically change early access roles from the server. I plan to share the alpha release to patrons that are subscribed to the second tier.
+
+Ace Asin — 05/10/2023
+
+- Removed Config/Setting.json from Bloodborne since it's no longer needed due to the new package.json files.
+
+Ace Asin — 05/10/2023
+
+- Improved the custom export script and made it internal instead of a separate script on my projects. It will definitely improve workflow and speed up the distribution process.
+
+Ace Asin — 05/12/2023
+
+- Changed the style of dropdowns on the asset section.
+
+Ace Asin — 05/13/2023
+
+- Improved the cancel button for the search bar on the manager and asset section.
+
+Ace Asin — 05/21/2023
+
+- Redesigned the content manager section.
+
+- Fixed the image to better fit the button.
+
+- Added a settings icon on the top left of the image to copy, link, update, or delete the avatar/world.
+
+- Removed all previous function buttons, manage avatar/world with the settings cog wheel.
+
+- Added more information such as name, description, along with identification, release, platform(s), and version.
+
+- Changed the list order to avatar, world, test.
+
+Ace Asin — 05/24/2023
+
+- Changed the log text to change color dynamically. It wouldn't change automatically before, only until some sort of compilation occurred.
+
+- Renamed log to accent for the color component, as it's now being used for other things.
+
+- Created a special shader and material for better performance that help in generating a banner/background with custom hue, saturation, and value depending on the accent color.
+
+- Added a new colorize texture toggle that will be used to change the banner/background color. It will be disabled by default, but enabling it once will make the editor remember it on all projects. The banner and background are both changed at an interval of 15000 milliseconds (15 seconds) after detecting accent color changes for better performance.
+
+Ace Asin — 05/24/2023
+
+- Added the hide scrollbar toggle to the default button that resets everything since it was missing.
+
+Ace Asin — 05/25/2023
+
+- Fixed a bug that caused the auto update toggle to not reset back to default.
+
+Ace Asin — 05/25/2023
+
+- Changed the startup behavior for auto update and splash screen. Seeing popups after every compilation can get quite annoying, which only causes the user to disable the startup toggles altogether. This change will now only open startup toggles on the initial startup of your editor application since it's remembering the startup toggles per session.
+
+- Fixed the startup toggles from starting while the application is playing.
+
+Ace Asin — 05/25/2023
+
+- Created a shortcut key to toggle the scrollbar.
+
+- Created a shortcut key to reset settings back to default.
+
+- Created a shortcut key to collapse/expand all settings.
+
+Ace Asin — 05/25/2023
+
+- Changed the accent color to be remembered by the editor since it's the most common. This only affects the accent color, all other colors will continue to be cached per project.
