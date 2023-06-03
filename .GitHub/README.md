@@ -89,7 +89,6 @@
   - Mesh Limiter
   - Particle Limiter
   - Polygon Limiter
-  - Quest Limiter
   - Shader Limiter
   - Station Limiter
   - Upload Limiter
@@ -174,7 +173,7 @@
     - DiscordUserDrawer.cs
     - NativeDllHandler.cs
   - Script
-    - Atrribute
+    - Attribute
       - CharacterLimitAttribute.cs
     - Control
       - DiscordEvents.cs
