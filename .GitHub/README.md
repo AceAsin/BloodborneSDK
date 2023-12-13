@@ -56,7 +56,7 @@
 
 ## Unity
 
-- [2019.4.31f1](https://docs.vrchat.com/docs/current-unity-version)
+- [2022.3.6f1](https://unity.com/releases/editor/whats-new/2022.3.6)
 
 ## Build
 
@@ -67,7 +67,7 @@
 
 ## Version
 
-- 3.2.0
+- 3.3.0
 
 ## Information
 
@@ -157,38 +157,8 @@
   - Image
     - Background.png
     - Banner.png
-  - Material
-    - Template.mat
-  - Shader
-    - Colorize.shader
-    - Thumbnail.shader
 - Cache
   - Setting.asset
-- Discord
-  - Editor
-    - CharacterLimitAttributeDrawer.cs
-    - DiscordAssetDrawer.cs
-    - DiscordEventDrawer.cs
-    - DiscordPartyDrawer.cs
-    - DiscordSecretsDrawer.cs
-    - DiscordTimestampDrawer.cs
-    - DiscordUserDrawer.cs
-    - NativeDllHandler.cs
-  - Script
-    - Attribute
-      - CharacterLimitAttribute.cs
-    - Control
-      - DiscordEvents.cs
-      - UnityLogger.cs
-    - Presence
-      - DiscordAssets.cs
-      - DiscordAvatar.cs
-      - DiscordEvent.cs
-      - DiscordParty.cs
-      - DiscordPresence.cs
-      - DiscordSecrets.cs
-      - DiscordTimestamps.cs
-      - DiscordUser.cs
 - Library
   - Bloodborne.dll
 - Plugin

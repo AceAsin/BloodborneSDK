@@ -49,3 +49,23 @@ Ace Asin — 10/25/2023 2:15 PM
 Ace Asin — 10/25/2023 3:35 PM
 
 - Changed the style of the authentication account window due to new scope layout.
+
+Ace Asin — 12/11/2023 5:10 PM
+
+- VRC is now targeting .NET Standard 2.1 for some reason. Bloodborne will continue to target .NET Framework 4.7.1. There shouldn't be any complications, and if there are then simply switch to .NET Framework on Edit > Project Settings > Player > Other Settings > Configuration > Api Compatibility Level*.
+
+Ace Asin — 12/12/2023 10:46 PM
+
+- Removed the entire Discord folder found inside Bloodborne. It was never required for Discord RPC to function and was causing issues on Unity 2022.
+
+Ace Asin — 12/13/2023 1:04 AM
+
+- Removed unnecessary editor tool's invocation from the logout method that is no longer used.
+
+Ace Asin — 12/13/2023 1:23 AM
+
+- Added a debug toggle that will enable all logging, including API for debugging purposes.
+
+Ace Asin — 12/13/2023 4:23 AM
+
+- Fixed alignment for all icons on the control panel. There's still a bug that will sometimes offset the icons if you're on the console tab during compilation, until you click on the project tab.
