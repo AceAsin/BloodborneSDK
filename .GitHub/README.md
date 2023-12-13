@@ -1,8 +1,9 @@
 # **Bloodborne**
 
-[GitHub]: https://github.com/AceAsin
-[Discord]: https://discord.gg/AceAsin
-[Patreon]: https://patreon.com/AceAsin
+[Bloodborne]: https://aceasin.com/bloodborne
+[GitHub]: https://github.com/aceasin
+[Discord]: https://discord.gg/aceasin
+[Patreon]: https://patreon.com/aceasin
 [BuyMeACoffee]: https://buymeacoffee.com/aceasin
 [Ko-Fi]: https://ko-fi.com/aceasin
 
@@ -27,10 +28,14 @@
     </a>
 </div>
 
+## Help
+
+- Join the [Discord][Discord] server for any questions or concerns. Please create a post on the dedicated support forum channel. Questions asked in inappropriate channels will be ignored and ultimately deleted.
+
 ## Download
 
-- The software download can be found on the server [Λ C Ξ Λ S I N][Discord]. There's also more information on there. Join the server if you require any assistance. We are more than happy to help.
-- If you want to share the software package, then please redirect users to the official server so that they may download the package from the respected source.
+- The software download can be found on the website by visiting [Bloodborne][Bloodborne].
+- If you want to share the software package, then please redirect users to the official website so that they may download the package from the respected source and gain additional information.
 - Do not download cracked versions of the software from nefarious users. This will only put you at risk of getting your computer compromised and information stolen.
 
 ## Support
@@ -47,7 +52,7 @@
 ## Important
 
 - The software now resides in **Packages** instead of **Assets** in the form of a custom package.
-- The software is capable of exporting from **Packages** and **Assets** since the original **Assets > Export Package...** method was patched.
+- The software is capable of exporting from **Packages** and **Assets** since the original **Assets > Export Package...** method was patched by Ace Asin.
 
 ## Unity
 
@@ -62,7 +67,7 @@
 
 ## Version
 
-- 3.1.0
+- 3.2.0
 
 ## Information
 
@@ -109,11 +114,8 @@
   - Discord Rich Presence
   - Domain Name System
   - Internet Protocol
-  - Inter Process Communication
   - JSON Web Token
   - Remote Configuration
-  - Remote Procedure Call
-  - Representational State Transfer
   - Unique Device Identification
 
 - Asset
@@ -134,8 +136,8 @@
   - PlayerPrefs
 
 - Script
-  - Bloodborne Background
-  - Bloodborne Thumbnail
+  - ~~Bloodborne Background~~
+  - ~~Bloodborne Thumbnail~~
 
 - Server
   - Authentication
