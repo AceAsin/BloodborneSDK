@@ -34,15 +34,15 @@
 
 ## Download
 
-- The software download can be found on the website by visiting [Bloodborne][Bloodborne].
+- The software can be downloaded from the website [Ace Asin](https://aceasin.com/bloodborne).
 - If you want to share the software package, then please redirect users to the official website so that they may download the package from the respected source and gain additional information.
 - Do not download cracked versions of the software from nefarious users. This will only put you at risk of getting your computer compromised and information stolen.
 
 ## Support
 
-- You can support me by creating a free account, following me on [GitHub][GitHub], and starring my repositories.
-- If you wish to donate, then please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi]. In return for donating, you will receive a cyan-colored lifetime donator role in the server that distinguishes you from others.
-- If you would like to receive early access and exclusive content, then consider becoming a patron by visiting my [Patreon][Patreon] page.
+- If you would like to purchase merch, then visit the shop at [Ace Asin](https://aceasin.com/shop). Purchases made at the shop help grow the business.
+- If you would like to donate, then please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi]. In return for donating, you will receive a cyan-colored lifetime donator role in the server that distinguishes you from others.
+- If you would like to subscribe, then consider becoming a patron by visiting my [Patreon][Patreon] page. In return for subscribing, you will receive early access and exclusive content
 
 ## Privacy
 
@@ -67,7 +67,7 @@
 
 ## Version
 
-- 3.3.0
+- 3.3.1
 
 ## Information
 
@@ -134,10 +134,6 @@
 - Preference
   - EditorPrefs
   - PlayerPrefs
-
-- Script
-  - ~~Bloodborne Background~~
-  - ~~Bloodborne Thumbnail~~
 
 - Server
   - Authentication

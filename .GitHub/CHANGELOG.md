@@ -69,3 +69,11 @@ Ace Asin — 12/13/2023 1:23 AM
 Ace Asin — 12/13/2023 4:23 AM
 
 - Fixed alignment for all icons on the control panel. There's still a bug that will sometimes offset the icons if you're on the console tab during compilation, until you click on the project tab.
+
+Ace Asin — 12/15/2023 1:51 AM
+
+- Fixed a bug that was making the control panel appear blank due to internal code that wasn't removed along with the material and shader used to colorize the banner on an older release.
+
+Ace Asin — 12/15/2023 2:00 AM
+
+- Used Unity 2022.3.6f1 dependencies to build the Bloodborne assembly, since I previously forgot to change the dependencies. The Bloodborne assembly was still referencing Unity 2019.4.31f1 dependencies, and although it didn't cause any issues, it was still bad practice.
