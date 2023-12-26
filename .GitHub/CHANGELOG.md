@@ -77,3 +77,7 @@ Ace Asin — 12/15/2023 1:51 AM
 Ace Asin — 12/15/2023 2:00 AM
 
 - Used Unity 2022.3.6f1 dependencies to build the Bloodborne assembly, since I previously forgot to change the dependencies. The Bloodborne assembly was still referencing Unity 2019.4.31f1 dependencies, and although it didn't cause any issues, it was still bad practice.
+
+Ace Asin — 12/26/2023 1:05 PM
+
+- Fixed an issue that prevented validations from loading, which ultimately prevented users from uploading.
