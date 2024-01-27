@@ -81,3 +81,9 @@ Ace Asin — 12/15/2023 2:00 AM
 Ace Asin — 12/26/2023 1:05 PM
 
 - Fixed an issue that prevented validations from loading, which ultimately prevented users from uploading.
+
+Ace Asin — 01/05/2024 8:45 PM
+
+- Bypassed the builder's accept terms toggle due to someone not being able to see it at all.
+
+- Fixed accidental mistake on last patch that prevented users from seeing how many PhysBones they had while targeting Android.

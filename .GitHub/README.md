@@ -28,46 +28,29 @@
     </a>
 </div>
 
-## Help
+## About
 
-- Join the [Discord][Discord] server for any questions or concerns. Please create a post on the dedicated support forum channel. Questions asked in inappropriate channels will be ignored and ultimately deleted.
+> [!TIP] Support
+> - You can take a look at our FAQ at [Bloodborne][Bloodborne]. Join the [Discord][Discord] server for any questions or concerns, and please use our support forum channel.
 
-## Download
+> [!IMPORTANT] Download
+> - The latest release of the software development kit can be downloaded from [Bloodborne][Bloodborne]. Join the [Discord][Discord] server to download older releases.
 
-- The software can be downloaded from the website [Ace Asin](https://aceasin.com/bloodborne).
-- If you want to share the software package, then please redirect users to the official website so that they may download the package from the respected source and gain additional information.
-- Do not download cracked versions of the software from nefarious users. This will only put you at risk of getting your computer compromised and information stolen.
+> [!NOTE] Sponsor
+> - Please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi] if you would like to donate. All donators receive a cyan-colored lifetime donator role in the server that distinguishes them from others.
+> - Please visit [Patreon][Patreon] if you would like to subscribe. All subscribers receive patron roles that unlock early access and exclusive content, depending on their tier.
 
-## Support
+> [!NOTE] Privacy
+> - The software development kit stores and accesses preferences by using [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) and [EditorPrefs](https://docs.unity3d.com/ScriptReference/EditorPrefs.html).
+> - The software development kit only performs [**HTTP** `GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method requests to obtain data from the backend server.
 
-- If you would like to purchase merch, then visit the shop at [Ace Asin](https://aceasin.com/shop). Purchases made at the shop help grow the business.
-- If you would like to donate, then please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi]. In return for donating, you will receive a cyan-colored lifetime donator role in the server that distinguishes you from others.
-- If you would like to subscribe, then consider becoming a patron by visiting my [Patreon][Patreon] page. In return for subscribing, you will receive early access and exclusive content
-
-## Privacy
-
-- The software stores and accesses preferences by using [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) and [EditorPrefs](https://docs.unity3d.com/ScriptReference/EditorPrefs.html).
-- The software only performs [**HTTP** `GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method requests to obtain data from the backend server.
-
-## Important
-
-- The software now resides in **Packages** instead of **Assets** in the form of a custom package.
-- The software is capable of exporting from **Packages** and **Assets** since the original **Assets > Export Package...** method was patched by Ace Asin.
+> [!NOTE] Package
+> - The software development kit now resides in **Packages** instead of **Assets** in the form of a custom package.
+> - The software development kit is capable of exporting from **Packages** and **Assets** since the original **Assets > Export Package...** method was patched by Ace Asin.
 
 ## Unity
 
 - [2022.3.6f1](https://unity.com/releases/editor/whats-new/2022.3.6)
-
-## Build
-
-- Alpha
-- Beta
-- Public
-- Private
-
-## Version
-
-- 3.3.2
 
 ## Information
 
