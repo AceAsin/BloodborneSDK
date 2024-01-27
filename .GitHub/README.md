@@ -30,21 +30,31 @@
 
 ## About
 
-> [!TIP] Support
+### Support
+
+> [!TIP]
 > - You can take a look at our FAQ at [Bloodborne][Bloodborne]. Join the [Discord][Discord] server for any questions or concerns, and please use our support forum channel.
 
-> [!IMPORTANT] Download
+### Download
+
+> [!IMPORTANT]
 > - The latest release of the software development kit can be downloaded from [Bloodborne][Bloodborne]. Join the [Discord][Discord] server to download older releases.
 
-> [!NOTE] Sponsor
+### Sponsor
+
+> [!NOTE]
 > - Please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi] if you would like to donate. All donators receive a cyan-colored lifetime donator role in the server that distinguishes them from others.
 > - Please visit [Patreon][Patreon] if you would like to subscribe. All subscribers receive patron roles that unlock early access and exclusive content, depending on their tier.
 
-> [!NOTE] Privacy
+### Privacy
+
+> [!NOTE]
 > - The software development kit stores and accesses preferences by using [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) and [EditorPrefs](https://docs.unity3d.com/ScriptReference/EditorPrefs.html).
 > - The software development kit only performs [**HTTP** `GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method requests to obtain data from the backend server.
 
-> [!NOTE] Package
+### Package
+
+> [!NOTE]
 > - The software development kit now resides in **Packages** instead of **Assets** in the form of a custom package.
 > - The software development kit is capable of exporting from **Packages** and **Assets** since the original **Assets > Export Package...** method was patched by Ace Asin.
 
