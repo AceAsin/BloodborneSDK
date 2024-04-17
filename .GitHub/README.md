@@ -49,7 +49,8 @@
 ### Privacy
 
 > [!NOTE]
-> - The software development kit stores and accesses preferences by using [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) and [EditorPrefs](https://docs.unity3d.com/ScriptReference/EditorPrefs.html).
+> - The software development kit utilizes [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) and [EditorPrefs](https://docs.unity3d.com/ScriptReference/EditorPrefs.html) to store and access preferences.
+> - The software development kit utilizes [SystemInfo-deviceUniqueIdentifier](https://docs.unity3d.com/ScriptReference/SystemInfo-deviceUniqueIdentifier.html) when authenticating tokens.
 > - The software development kit only performs [**HTTP** `GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method requests to obtain data from the backend server.
 
 ### Package
@@ -60,7 +61,10 @@
 
 ## Unity
 
-- [2022.3.6f1](https://unity.com/releases/editor/whats-new/2022.3.6)
+- Ace Asin - Bloodborne SDK (3.3.0+)
+  - [2022.3.6f1](https://unity.com/releases/editor/whats-new/2022.3.6)
+- Ace Asin - Bloodborne SDK (3.2.0-)
+  - [2019.4.31f1](https://unity.com/releases/editor/whats-new/2019.4.31)
 
 ## Information
 

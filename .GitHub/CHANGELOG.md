@@ -87,3 +87,23 @@ Ace Asin — 01/05/2024 8:45 PM
 - Bypassed the builder's accept terms toggle due to someone not being able to see it at all.
 
 - Fixed accidental mistake on last patch that prevented users from seeing how many PhysBones they had while targeting Android.
+
+Ace Asin — 02/14/2024 11:25 AM
+
+- Fixed a bug that failed to find entry points on initial load due to assembly obfuscation. The error was being thrown by Burst due to their ruling, and could safely be ignored. Unity requires specific entry point methods, so an advanced rule was created to exclude those methods from obfuscation.
+
+Ace Asin — 04/14/2024 10:32 AM
+
+- Fixed the height limiter bypass not working on newer releases.
+
+Ace Asin — 04/14/2024 11:32 PM
+
+- Added 2 different toggles, Log for API level logging and Debug for All level logging.
+
+Ace Asin — 04/15/2024 12:50 AM
+
+- Fixed a bug that showed 2 avatar performance options on the settings.
+
+Ace Asin — 04/17/2024 4:11 AM
+
+- Allowed to upload with textures bigger than 8192.
