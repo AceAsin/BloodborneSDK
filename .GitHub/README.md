@@ -44,7 +44,7 @@
 
 > [!NOTE]
 > - Please visit [Buy Me A Coffee][BuyMeACoffee] or [Ko-Fi][Ko-Fi] if you would like to donate. All donators receive a cyan-colored lifetime donator role in the server that distinguishes them from others.
-> - Please visit [Patreon][Patreon] if you would like to subscribe. All subscribers receive patron roles that unlock early access and exclusive content, depending on their tier.
+> - Please visit [Patreon][Patreon] if you would like to subscribe. All subscribers receive patron roles that unlock exclusive content and early access, depending on their tier.
 
 ### Privacy
 
