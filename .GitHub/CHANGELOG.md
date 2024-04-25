@@ -107,3 +107,7 @@ Ace Asin — 04/15/2024 12:50 AM
 Ace Asin — 04/17/2024 4:11 AM
 
 - Allowed to upload with textures bigger than 8192.
+
+Ace Asin — 04/25/2024 11:07 AM
+
+- Added a new toggle named Experimental Identifier.  This toggle will use Bloodborne's unique device identifier instead of Unity's unique device identifier when authenticating tokens.
