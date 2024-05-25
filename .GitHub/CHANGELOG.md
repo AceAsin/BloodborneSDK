@@ -111,3 +111,133 @@ Ace Asin — 04/17/2024 4:11 AM
 Ace Asin — 04/25/2024 11:07 AM
 
 - Added a new toggle named Experimental Identifier.  This toggle will use Bloodborne's unique device identifier instead of Unity's unique device identifier when authenticating tokens.
+
+Ace Asin — 05/08/2024 2:25 AM
+
+- Set both of the avatar's compressed size and uncompressed size to unlimited for PC.
+
+- Live SDK (3.5.2) avatars have a compressed limit of 500 MB and an uncompressed limit of roughly a bit over 1.2 GB for PC.
+
+Ace Asin — 05/14/2024 8:47 PM
+
+- Removed the original Unity version update message because it looked ugly. It's been added to the account window once logged-in, along with a button that will take users to the exact download page. The software will mark 2022.3.6f1 ➜ 2022.3.22f1 if there's an update. The software will mark the current version 2022.3.22f1 if it's up-to-date. These version numbers are dynamic and will change accordingly, as well as the update button, it'll either be active or inactive.
+
+Ace Asin — 05/15/2024 5:37 AM
+
+- Added a dialog popup window for the Experimental Identifier toggle, warning users of the risks of enabling/disabling the toggle.
+
+- Added the device hash that's being used when communicating with the backend server above the token field. This changes to Unity's unique device identifier or Bloodborne's unique device identifier when enabling/disabling the Experimental Identifier toggle.
+
+- Renamed Experimental Identifier to Persistent Identifier.
+
+Ace Asin — 05/15/2024 9:03 AM
+
+- Moved toggles from Startup to Toggle. The Toggle section is also now able to be minimized.
+
+Ace Asin — 05/15/2024 9:47 AM
+
+- Added a System section with system information. Also created 5 new variables that can be used for Discord RPC ({OS} | {GPU} | {CPU} | {RAM} | {RES}).
+
+Ace Asin — 05/16/2024 5:11 AM
+
+- Fixed the export hotkey that I use for development purposes not working.
+
+- Moved all folders out of the Bloodborne folder and into com.aceasin.bloodborne instead. Although, they have different names, the com.aceasin.bloodborne folder is named Bloodborne in Unity. This made it weird having to go into 2 folders named Bloodborne back to back.
+
+Ace Asin — 05/16/2024 5:37 AM
+
+- Added the ability to change the control panel banner from the settings once again. This option was previously removed when the new builder was introduced, but I found a way to add it back.
+
+Ace Asin — 05/16/2024 6:39 AM
+
+- Removed the Background image asset, it's too large and has no longer been in use.
+
+- Added the Colorize Texture toggle back. This will change the banner image color based on the accent color.
+
+- Improved the behavior of image colorization. The Colorized Texture toggle will colorize both default and custom images if it's been enabled.
+
+- Fixed a slight performance issue when changing the color accent and colorizing the banner, no more need for a delay either that was used to combat this issue.
+
+Ace Asin — 05/16/2024 7:42 AM
+
+- Fixed VRC packages that were marking 3.5.0 instead of 3.5.2 in the package.json file.
+
+Ace Asin — 05/17/2024 7:00 AM
+
+- Changed the style of the toggles to represent an active or inactive button, 4 toggles per row across the width of the settings. I made this change because there were a lot of toggles and they took up a large vertical portion of the settings. It's also better since users are likelier to notice the hover text when hovering over the button-styled toggle.
+
+- Changed the labels in settings to take up 1/4 of the width of the settings.
+
+Ace Asin — 05/17/2024 8:42 AM
+
+- Renamed Generator functions generate and default to create and delete.
+
+- Ace Asin — 05/17/2024 9:33 AM
+
+- Set the default Quest type to Megabytes instead of Bytes.
+
+Ace Asin — 05/17/2024 10:37 AM
+
+- Moved sections Bloodborne and VRChat to a new Release section that's collapsible.
+
+- Created a single field and merged Build and Version into a single string. Moved the cloud icon that executes the update function when clicked on the right side of each field.
+
+Ace Asin — 05/17/2024 1:31 PM
+
+- Moved the Show Avatar Performance Details toggle that's broken on the Live SDK to the Developer section instead of its own Avatar section.
+
+Ace Asin — 05/19/2024 2:34 PM
+
+- Changed the Developer toggles to match Bloodborne's new style toggles and you can now collapse/expand the section.
+
+Ace Asin — 05/19/2024 5:25 PM
+
+- Fixed a bug that caused the Quest type converter from properly changing bytes to megabytes.
+
+- Improved the Quest type converter algorithm to better make changes.
+
+Ace Asin — 05/19/2024 11:56 PM
+
+- Merged sections Color and Control into a new Interface section.
+
+Ace Asin — 05/20/2024 12:42 AM
+
+- Made changes to how assets are fetched. It will no longer try to authenticate the user if they are not authenticated when fetching assets. The user will have to authenticate from the settings before being able to fetch assets, fetch button will be disabled when not authenticated.
+
+- Improved the fetching button state to be realistic to how long it takes to fetch assets by utilizing an editor coroutine.
+
+Ace Asin — 05/20/2024 12:58 AM
+
+- Renamed all button labels to Function in settings.
+
+Ace Asin — 05/20/2024 1:17 AM
+
+- Fixed the user interface text color not working.
+
+- Removed text color picker for now, some styles use custom text colors.
+
+Ace Asin — 05/20/2024 2:50 AM
+
+- Removed the Internet Protocol toggle, each network row has its own visibility icon toggle on the right side.
+
+- Improved the way the numbers are hidden, instead of marking 0.0.0.0, it will not show the exact address number length but replaced with zeros.
+
+Ace Asin — 05/20/2024 2:59 AM
+
+- Improved the persistent identifier algorithm even further, more properties are considered. This will change anyone's current experimental identifier on the next release.
+
+Ace Asin — 05/20/2024 3:37 AM
+
+- Increased clickable icon margin. The clickable area is now 20 x 20 px.
+
+- Fixed margin on other clickable icons that were offset.
+
+Ace Asin — 05/21/2024 1:38 AM
+
+- Improved the upload limiter bypass behavior. It will now be persistent throughout compilation and authorization. It would previously not set the values after compilation or authorization, forcing users to set the values again.
+
+- Updated the information on the builder for the upload limiter warning. It will now also display what the current upload size limiter is set to when the toggle is enabled. It will tell you that it's set to unlimited if the toggle is disabled.
+
+Ace Asin — 05/21/2024 8:17 AM
+
+- Updated the compressed upload size limiter for PC and Quest to automatically be set to unlimited when authorized and limited when unauthorized.

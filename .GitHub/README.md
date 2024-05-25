@@ -50,7 +50,7 @@
 
 > [!NOTE]
 > - The software development kit utilizes [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) and [EditorPrefs](https://docs.unity3d.com/ScriptReference/EditorPrefs.html) to store and access preferences.
-> - The software development kit utilizes [SystemInfo-deviceUniqueIdentifier](https://docs.unity3d.com/ScriptReference/SystemInfo-deviceUniqueIdentifier.html) when authenticating tokens.
+> - The software development kit utilizes [SystemInfo-deviceUniqueIdentifier](https://docs.unity3d.com/ScriptReference/SystemInfo-deviceUniqueIdentifier.html) when authenticating/authorizing tokens.
 > - The software development kit only performs [**HTTP** `GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method requests to obtain data from the backend server.
 
 ### Package
@@ -62,7 +62,7 @@
 ## Unity
 
 - Ace Asin - Bloodborne SDK (3.3.0+)
-  - [2022.3.6f1](https://unity.com/releases/editor/whats-new/2022.3.6)
+  - [2022.3.22f1](https://unity.com/releases/editor/whats-new/2022.3.22)
 - Ace Asin - Bloodborne SDK (3.2.0-)
   - [2019.4.31f1](https://unity.com/releases/editor/whats-new/2019.4.31)
 
@@ -76,13 +76,11 @@
   - Auto Remove Shaders
   - Auto Updater
   - Bug Fixes
-  - Bypass PC Limiters
-  - Bypass Quest Limiters
   - Performance Improvements
   - Preset Accounts
+  - Shader Stripper
   - Shortcut Hotkeys
-  - ~~Unlimited Controls~~
-  - ~~Unlimited Parameters~~
+  - Visual Enhancements
 
 - Bypass
   - Audio Limiter
@@ -98,11 +96,8 @@
 - Custom
   - Artwork Banner
   - Asset Path
-  - Avatar Thumbnail
-  - Avatar Size
   - Client Path
   - Rich Presence
-  - Upload Panel
   - User Interface
 
 - Technology
@@ -147,9 +142,17 @@
 ## Package
 
 - Asset
+  - Icon
+    - CPU
+    - GPU
+    - RAM
+    - RES
   - Image
-    - Background.png
     - Banner.png
+  - Material
+    - Template.mat
+  - Shader
+    - Colorize.shader
 - Cache
   - Setting.asset
 - Library
@@ -182,6 +185,11 @@
 - `{Pause}` - The current Unity pause state event.
   - Paused
   - Unpaused
+- `{OS}`
+- `{GPU}`
+- `{CPU}`
+- `{RAM}`
+- `{RES}`
 
 ## Shortcut
 
@@ -192,7 +200,7 @@
 - `ALT + W` - Center Window
 - `ALT + R` - Reset Setting
 - `ALT + E` - Export Package (Developer Only)
-- `ALT + O` - Overwrite Prefab (Developer Only)
+- ~~`ALT + O`~~ ~~- Overwrite Prefab (Developer Only)~~
 
 ## Markdown
 
