@@ -49,13 +49,14 @@
 ### Privacy
 
 > [!NOTE]
+> - The software development kit only performs [**HTTP** `GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method requests to obtain data from the backend server.
 > - The software development kit utilizes [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) and [EditorPrefs](https://docs.unity3d.com/ScriptReference/EditorPrefs.html) to store and access preferences.
 > - The software development kit utilizes [SystemInfo-deviceUniqueIdentifier](https://docs.unity3d.com/ScriptReference/SystemInfo-deviceUniqueIdentifier.html) when authenticating/authorizing tokens.
-> - The software development kit only performs [**HTTP** `GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method requests to obtain data from the backend server.
 
 ### Package
 
 > [!NOTE]
+> - The software development kit requires internet access to make requests to the backend server.
 > - The software development kit now resides in **Packages** instead of **Assets** in the form of a custom package.
 > - The software development kit is capable of exporting from **Packages** and **Assets** since the original **Assets > Export Package...** method was patched by Ace Asin.
 
