@@ -261,3 +261,7 @@ Ace Asin — 4/26/25 6:29
 Ace Asin — 4/26/25 9:54
 
 - Added new buttons to the Developer section, Detail-Preserving Image Downscaling (BETA), DPID Conservative, and Execute Constraints In Edit Mode. Excluded Dry Run, as there's really no point in users enabling that option.
+
+Ace Asin — 5/8/25 13:08
+
+- Fixed a bug that caused the control panel tabs to behave abnormally and prevented the early access token window from displaying if users had missing roles.
